@@ -36,9 +36,9 @@ CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920") #
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE CGraph)
 
-CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
-add_executable(cinder-cpp src/cinder.cpp)
-target_link_libraries(cinder-cpp PRIVATE cinder)
+#CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
+#add_executable(cinder-cpp src/cinder.cpp)
+#target_link_libraries(cinder-cpp PRIVATE cinder)
 
 CPMAddPackage("gh:rikyoz/bit7z@4.0.5")
 add_executable(bit7z-cpp src/bit7z.cpp)
