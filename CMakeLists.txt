@@ -32,11 +32,11 @@ CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
 
-CPMAddPackage("gh:SGSSGene/CGraph#fix/cmake") #!TODO waiting for fix
+CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920") #!TODO status 11. March 2024
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE CGraph)
 
-CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01.Feb 2024
+CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
 add_executable(cinder-cpp src/cinder.cpp)
 target_link_libraries(cinder-cpp PRIVATE cinder)
 
