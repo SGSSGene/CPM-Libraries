@@ -160,5 +160,6 @@ target_link_libraries(matplotplusplus-cpp PRIVATE matplot)
 #add_executable(brotli-cpp src/brotli.cpp)
 #target_link_libraries(brotli-cpp PRIVATE brotli)
 
-CPMAddPackage("gh:SGSSGene/cpm_check_version#9983dd8")
-cpm_check_version(glad reflect)
+CPMAddPackage("gh:SGSSGene/cpm_check_version#27efbc1")
+enable_testing()
+cpm_check_version(glad)
