@@ -104,10 +104,10 @@ add_executable(glad-cpp src/glad.cpp)
 target_link_libraries(glad-cpp PRIVATE glad glfw)
 
 
-CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
-add_dependencies(cinder glad glfw glm)
-add_executable(cinder-cpp src/cinder.cpp)
-target_link_libraries(cinder-cpp PRIVATE cinder)
+#CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
+#add_dependencies(cinder glad glfw glm)
+#add_executable(cinder-cpp src/cinder.cpp)
+#target_link_libraries(cinder-cpp PRIVATE cinder)
 
 WrappedCPMAddPackage("gh:google/flatbuffers@24.3.7")
 add_executable(flatbuffers-cpp src/flatbuffers.cpp)
