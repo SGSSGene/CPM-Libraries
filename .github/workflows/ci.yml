@@ -30,7 +30,7 @@ jobs:
           - {os: ubuntu-22.04, compiler: cpm_version_check}
     steps:
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v9.2
+        uses: iv-project/IVaction@v9.3
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
