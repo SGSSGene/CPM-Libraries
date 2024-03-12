@@ -10,7 +10,6 @@ on:
   pull_request:
 
 env:
-  NANOBENCH_SUPPRESS_WARNINGS: 1
   TZ: Europe/Berlin
 
 concurrency:
@@ -30,7 +29,7 @@ jobs:
           - {os: ubuntu-22.04, compiler: gcc13-cpp20-release, cmake_flags: "CPM_CHECK_VERSION_ENABLED=1"}
     steps:
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v9.3
+        uses: iv-project/IVaction@c9c6a54b406b95f3252c711fd981eaf8534f3a53
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
