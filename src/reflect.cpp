@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb
+// SPDX-FileCopyrightText: 2024 Kris Jusiak
 // SPDX-License-Identifier: BSL-1.0
 
 #include <reflect>

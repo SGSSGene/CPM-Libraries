@@ -12,6 +12,8 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.3")
+
 CPMAddPackage("gh:fmtlib/fmt#10.2.1@10.2.1")
 add_executable(fmt-cpp src/fmt.cpp)
 target_link_libraries(fmt-cpp PRIVATE fmt::fmt)
@@ -48,10 +50,7 @@ CPMAddPackage("gh:martinus/nanobench@4.3.11")
 add_executable(nanobench-cpp src/nanobench.cpp)
 target_link_libraries(nanobench-cpp PRIVATE nanobench)
 
-set(BUILD_DOC OFF)
-set(BUILD_SANDBOX OFF)
-set(SKIP_PERFORMANCE_COMPARISON ON)
-CPMAddPackage("gh:USCiLab/cereal@1.3.2")
+WrappedCPMAddPackage("gh:USCiLab/cereal@1.3.2")
 add_executable(cereal-cpp src/cereal.cpp)
 target_link_libraries(cereal-cpp PRIVATE cereal::cereal)
 
@@ -67,24 +66,17 @@ CPMAddPackage("gh:biojppm/rapidyaml@0.5.0")
 add_executable(rapidyaml-cpp src/rapidyaml.cpp)
 target_link_libraries(rapidyaml-cpp PRIVATE ryml::ryml)
 
-set(BENCHMARK_ENABLE_TESTING OFF)
-CPMAddPackage("gh:google/benchmark@1.8.3")
+WrappedCPMAddPackage("gh:google/benchmark@1.8.3")
 add_executable(benchmark-cpp src/benchmark.cpp)
 target_link_libraries(benchmark-cpp PRIVATE benchmark::benchmark)
 
-
-set(BUILD_GMOCK OFF)
-CPMAddPackage("gh:google/googletest@1.14.0")
+WrappedCPMAddPackage("gh:google/googletest@1.14.0")
 add_executable(googletest-cpp src/googletest.cpp)
 target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
-
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")
 
 WrappedCPMAddPackage("gh:boost-ext/reflect@1.0.9")
 add_executable(reflect-cpp src/reflect.cpp)
 target_link_libraries(reflect-cpp PRIVATE reflect::reflect)
-target_compile_options(reflect-cpp PUBLIC "-std=c++20")
-
 
 WrappedCPMAddPackage("gh:simd-everywhere/simde@0.7.6")
 add_executable(simde-cpp src/simde.cpp)
@@ -103,19 +95,11 @@ add_executable(bzip2-cpp src/bzip2.cpp)
 target_link_libraries(bzip2-cpp PRIVATE bzip2::bzip2)
 
 CPMAddPackage("gh:Dav1dde/glad@0.1.36")
-CPMAddPackage("gh:g-truc/glm#0.9.9.7@0.9.9.7")
-CPMAddPackage(
-  NAME glfw
-  GITHUB_REPOSITORY glfw/glfw
-  GIT_TAG 3.3.2
-  VERSION 3.3.2
-  OPTIONS
-    "GLFW_BUILD_TESTS Off"
-    "GLFW_BUILD_EXAMPLES Off"
-    "GLFW_BUILD_DOCS Off"
-    "GLFW_INSTALL Off"
-    "GLFW_USE_HYBRID_HPG On"
-)
+CPMAddPackage("gh:g-truc/glm#1.0.1@1.0.1")
+
+set(GLFW_BUILD_WAYLAND OFF)
+set(GLFW_BUILD_X11 OFF)
+WrappedCPMAddPackage("gh:glfw/glfw#3.4@3.4")
 add_executable(glad-cpp src/glad.cpp)
 target_link_libraries(glad-cpp PRIVATE glad glfw)
 
@@ -124,6 +108,48 @@ CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TOD
 add_dependencies(cinder glad glfw glm)
 add_executable(cinder-cpp src/cinder.cpp)
 target_link_libraries(cinder-cpp PRIVATE cinder)
+
+WrappedCPMAddPackage("gh:google/flatbuffers@24.3.7")
+add_executable(flatbuffers-cpp src/flatbuffers.cpp)
+target_link_libraries(flatbuffers-cpp PRIVATE flatbuffers)
+
+CPMAddPackage("gh:xtensor-stack/xsimd#12.1.1@12.1.1")
+add_executable(xsimd-cpp src/xsimd.cpp)
+target_link_libraries(xsimd-cpp PRIVATE xsimd)
+target_compile_options(xsimd-cpp PUBLIC -mavx -mavx2)
+
+CPMAddPackage("gh:xtensor-stack/xtl#0.7.7@0.7.7")
+add_executable(xtl-cpp src/xtl.cpp)
+target_link_libraries(xtl-cpp PRIVATE xtl)
+
+WrappedCPMAddPackage("gh:microsoft/mimalloc@2.1.2")
+add_executable(mimalloc-cpp src/mimalloc.cpp)
+target_link_libraries(mimalloc-cpp PRIVATE mimalloc)
+
+WrappedCPMAddPackage("gh:libsndfile/libsamplerate#0.2.2@0.2.2")
+add_executable(libsamplerate-cpp src/libsamplerate.cpp)
+target_link_libraries(libsamplerate-cpp PRIVATE SampleRate::samplerate)
+
+WrappedCPMAddPackage("gh:libsndfile/libsndfile#1.2.2@1.2.2")
+add_executable(libsndfile-cpp src/libsndfile.cpp)
+target_link_libraries(libsndfile-cpp PRIVATE SndFile::sndfile)
+
+CPMAddPackage("gh:martinus/unordered_dense@4.4.0")
+add_executable(unordered_dense-cpp src/unordered_dense.cpp)
+target_link_libraries(unordered_dense-cpp PRIVATE unordered_dense::unordered_dense)
+
+CPMAddPackage("gh:martinus/robin-hood-hashing#3.11.5@3.11.5")
+add_executable(robin-hood-hashing-cpp src/robin-hood-hashing.cpp)
+target_link_libraries(robin-hood-hashing-cpp PRIVATE robin_hood::robin_hood)
+
+CPMAddPackage("gh:alandefreitas/matplotplusplus@1.2.1")
+add_executable(matplotplusplus-cpp src/matplotplusplus.cpp)
+target_link_libraries(matplotplusplus-cpp PRIVATE matplot)
+
+
+#CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
+#add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)
+#target_linkk_libraries(amplitudeaudiosdk-cpp PRIVATE SparkyStudios::Audio::Amplitude::SDK::Static)
 
 
 #CPMAddPackage("gh:bombela/backward-cpp@1.6")
@@ -134,3 +160,5 @@ target_link_libraries(cinder-cpp PRIVATE cinder)
 #add_executable(brotli-cpp src/brotli.cpp)
 #target_link_libraries(brotli-cpp PRIVATE brotli)
 
+CPMAddPackage("gh:SGSSGene/cpm_check_version#9983dd8")
+cpm_check_version(glad reflect)
