@@ -3,7 +3,6 @@
 -->
 # Libraries
 
-
 <div markdown class="compact_data_table">
 
 | Name                                                    | Version    | CPM                                                                                                 <br>CMakeTarget                                            <br>extra  |
@@ -13,7 +12,7 @@
 | [Catch2](https://github.com/catchorg/Catch2)            | v3.5.3     | `#!cmake CPMAddPackage("gh:catchorg/Catch2@3.5.3")`                                                 <br>CMakeTarget: `Catch2::Catch2 Catch2::Catch2WithMain`   <br>       |
 | [rang](https://github.com/agauniyal/rang)               | v3.2       | `#!cmake CPMAddPackage("gh:agauniyal/rang@3.2")`                                                    <br>CMakeTarget: `rang`                                    <br>       |
 | [abseil](https://github.com/abseil/abseil-cpp)          | 20240116.1 | `#!cmake CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")`                                          <br>CMakeTarget: `absl::strings absl::*`                   <br>       |
-| [CGraph](https://github.com/ChunelFeng/CGraph)          | !TODO      | `#!cmake CPMAddPackage("gh:SGSSGene/CGraph#fix/cmake")`                                             <br>CMakeTarget: `CGraph`                                  <br>       |
+| [CGraph](https://github.com/ChunelFeng/CGraph)          | !TODO      | `#!cmake CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920")`            <br>CMakeTarget: `CGraph`                                  <br>       |
 | [Cinder](https://github.com/cinder/Cinder)              | #a70e977b  | `#!cmake CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059")`                <br>CMakeTarget: `cinder`                                  <br>       |
 | [bit7z](https://github.com/rikyoz/bit7z)                | v4.0.5     | `#!cmake CPMAddPackage("gh:rikyoz/bit7z@4.0.5")`                                                    <br>CMakeTarget: `bit7z`                                   <br>       |
 | [toml++](https://github.com/marzer/tomlplusplus)        | v3.4.0     | `#!cmake CPMAddPackage("gh:marzer/tomlplusplus@3.4.0")`                                             <br>CMakeTarget: `tomlplusplus::tomlplusplus`              <br>       |
@@ -27,8 +26,25 @@
 | [reflect](https://github.com/boost-ext/reflect)         | v1.1.0     | `#!cmake WrapperCPMAddPackage("gh:boost-ext/refelect@1.1.0")`                                       <br>CMakeTarget: `reflect::reflect`                        <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
 | [simde](https://github.com/simd-everywhere/simde)       | v0.7.6     | `#!cmake WrapperCPMAddPackage("gh:simd-everywhere/simde@0.7.6")`                                    <br>CMakeTarget: `simde::simde`                            <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
 | [zlib](https://zlib.net/zlib-1.3.1.tar.gz)              | 1.3.1      | `#!cmake WrapperCPMAddPackage("https://zlib.net/zlib-1.3.1.tar.gz@1.3.1")`                          <br>CMakeTarget: `zlib::zlib`                              <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
+| [zstd](https://github.com/facebook/zstd)                | v1.5.5     | `#!cmake WrappedCPMAddPackage("gh:facebook/zstd@1.5.5")`                                            <br>                                                       <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
+| [bzip2](https://sourceware.org/bzip2/)                  | v1.0.8     | `#!cmake WrappedCPMAddPackage("https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz@1.0.8")`         <br>                                                       <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
+
 
 </div>
+
+# Utilities
+
+<div markdown class="compact_data_table">
+
+| Name                                                                       | Version    | CPM                                                                                                                                                                       |
+|:---------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [CMakeUseCCache](https://github.com/SGSSGene/CMakeUseCCache)               |    v1.0.0  | `#!cmake CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")`                                      <br>`#!cmake require_ccache() # activates ccache usage`    <br>          |
+| [iWrappedCPMAddPackage](https://github.com/SGSSGene/WrappedCPMAddPackage)  |    v0.2.0  | `#!cmake CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")`                                <br>`#!cmake WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")` # example usage <br>   |
+
+
+
+</div>
+
 
 <!--
 | [backward-cpp](https://github.com/bombela/backward-cpp) | v1.6       | `backward`                              | `CPMAddPackage("gh:bombela/backward-cpp@1.6")`                               |       |
