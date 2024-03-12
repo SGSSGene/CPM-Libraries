@@ -74,7 +74,7 @@ WrappedCPMAddPackage("gh:google/googletest@1.14.0")
 add_executable(googletest-cpp src/googletest.cpp)
 target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
 
-WrappedCPMAddPackage("gh:boost-ext/reflect@1.0.9")
+WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")
 add_executable(reflect-cpp src/reflect.cpp)
 target_link_libraries(reflect-cpp PRIVATE reflect::reflect)
 
