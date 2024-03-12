@@ -32,13 +32,9 @@ CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
 
-CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920") #!TODO status 11. March 2024
-add_executable(cgraph-cpp src/cgraph.cpp)
-target_link_libraries(cgraph-cpp PRIVATE CGraph)
-
-#CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
-#add_executable(cinder-cpp src/cinder.cpp)
-#target_link_libraries(cinder-cpp PRIVATE cinder)
+#CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920") #!TODO broken
+#add_executable(cgraph-cpp src/cgraph.cpp)
+#target_link_libraries(cgraph-cpp PRIVATE CGraph)
 
 CPMAddPackage("gh:rikyoz/bit7z@4.0.5")
 add_executable(bit7z-cpp src/bit7z.cpp)
@@ -84,7 +80,7 @@ target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
 
 CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")
 
-WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")
+WrappedCPMAddPackage("gh:boost-ext/reflect@1.0.9")
 add_executable(reflect-cpp src/reflect.cpp)
 target_link_libraries(reflect-cpp PRIVATE reflect::reflect)
 target_compile_options(reflect-cpp PUBLIC "-std=c++20")
@@ -106,6 +102,28 @@ WrappedCPMAddPackage("https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz@1.0.8"
 add_executable(bzip2-cpp src/bzip2.cpp)
 target_link_libraries(bzip2-cpp PRIVATE bzip2::bzip2)
 
+CPMAddPackage("gh:Dav1dde/glad@0.1.36")
+CPMAddPackage("gh:g-truc/glm#0.9.9.7@0.9.9.7")
+CPMAddPackage(
+  NAME glfw
+  GITHUB_REPOSITORY glfw/glfw
+  GIT_TAG 3.3.2
+  VERSION 3.3.2
+  OPTIONS
+    "GLFW_BUILD_TESTS Off"
+    "GLFW_BUILD_EXAMPLES Off"
+    "GLFW_BUILD_DOCS Off"
+    "GLFW_INSTALL Off"
+    "GLFW_USE_HYBRID_HPG On"
+)
+add_executable(glad-cpp src/glad.cpp)
+target_link_libraries(glad-cpp PRIVATE glad glfw)
+
+
+CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059") #!TODO status 01. Feb 2024
+add_dependencies(cinder glad glfw glm)
+add_executable(cinder-cpp src/cinder.cpp)
+target_link_libraries(cinder-cpp PRIVATE cinder)
 
 
 #CPMAddPackage("gh:bombela/backward-cpp@1.6")

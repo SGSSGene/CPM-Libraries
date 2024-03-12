@@ -12,8 +12,7 @@
 | [Catch2](https://github.com/catchorg/Catch2)            | v3.5.3     | `#!cmake CPMAddPackage("gh:catchorg/Catch2@3.5.3")`                                                 <br>CMakeTarget: `Catch2::Catch2 Catch2::Catch2WithMain`   <br>       |
 | [rang](https://github.com/agauniyal/rang)               | v3.2       | `#!cmake CPMAddPackage("gh:agauniyal/rang@3.2")`                                                    <br>CMakeTarget: `rang`                                    <br>       |
 | [abseil](https://github.com/abseil/abseil-cpp)          | 20240116.1 | `#!cmake CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")`                                          <br>CMakeTarget: `absl::strings absl::*`                   <br>       |
-| [CGraph](https://github.com/ChunelFeng/CGraph)          | !TODO      | `#!cmake CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920")`            <br>CMakeTarget: `CGraph`                                  <br>       |
-| [Cinder](https://github.com/cinder/Cinder)              | #a70e977b  | `#!cmake CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059")`                <br>CMakeTarget: `cinder`                                  <br>       |
+| [CGraph](https://github.com/ChunelFeng/CGraph)          | <broken>   | `#!cmake CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920")`            <br>CMakeTarget: `CGraph`                                  <br>       |
 | [bit7z](https://github.com/rikyoz/bit7z)                | v4.0.5     | `#!cmake CPMAddPackage("gh:rikyoz/bit7z@4.0.5")`                                                    <br>CMakeTarget: `bit7z`                                   <br>       |
 | [toml++](https://github.com/marzer/tomlplusplus)        | v3.4.0     | `#!cmake CPMAddPackage("gh:marzer/tomlplusplus@3.4.0")`                                             <br>CMakeTarget: `tomlplusplus::tomlplusplus`              <br>       |
 | [nanobench](https://github.com/martinus/nanobench)      | v4.3.11    | `#!cmake CPMAddPackage("gh:martinus/nanobench@4.3.11")`                                             <br>CMakeTarget: `nanobench::nanobench`                    <br>       |
@@ -28,6 +27,10 @@
 | [zlib](https://zlib.net/zlib-1.3.1.tar.gz)              | 1.3.1      | `#!cmake WrapperCPMAddPackage("https://zlib.net/zlib-1.3.1.tar.gz@1.3.1")`                          <br>CMakeTarget: `zlib::zlib`                              <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
 | [zstd](https://github.com/facebook/zstd)                | v1.5.5     | `#!cmake WrappedCPMAddPackage("gh:facebook/zstd@1.5.5")`                                            <br>                                                       <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
 | [bzip2](https://sourceware.org/bzip2/)                  | v1.0.8     | `#!cmake WrappedCPMAddPackage("https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz@1.0.8")`         <br>                                                       <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/EnableCPM) |
+| [glad](https://github.com/Dav1dde/glad)                 | v0.1.36    | !TODO |
+| [glm] (https://github.com/g-truc/glm)                   | 0.9.9.7    | !TODO |
+| [glfw](https://github.com/glfw/glfw)                    | 3.3.2      | !TODO |
+| [Cinder](https://github.com/cinder/Cinder)              | #a70e977b  | `#!cmake CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059")`                <br>CMakeTarget: `cinder`                                  <br>       |
 
 
 </div>
