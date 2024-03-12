@@ -84,7 +84,7 @@ target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
 
 CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")
 
-WrappedCPMAddPackage("gh:boost-ext/reflect@1.0.9")
+WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")
 add_executable(reflect-cpp src/reflect.cpp)
 target_link_libraries(reflect-cpp PRIVATE reflect::reflect)
 target_compile_options(reflect-cpp PUBLIC "-std=c++20")
@@ -98,7 +98,7 @@ WrappedCPMAddPackage("https://zlib.net/zlib-1.3.1.tar.gz@1.3.1")
 add_executable(zlib-cpp src/zlib.cpp)
 target_link_libraries(zlib-cpp PRIVATE zlib::zlib)
 
-WrappedCPMAddPackage("gh:facebook/zstd@1.5.1")
+WrappedCPMAddPackage("gh:facebook/zstd@1.5.5")
 add_executable(zstd-cpp src/zstd.cpp)
 target_link_libraries(zstd-cpp PRIVATE zstd::zstd)
 
