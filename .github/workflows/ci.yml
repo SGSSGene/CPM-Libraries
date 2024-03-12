@@ -27,7 +27,7 @@ jobs:
       matrix:
         include:
           - {os: ubuntu-22.04, compiler: spdx_reuse_lint}
-          - {os: ubuntu-22.04, compiler: cpm_version_check}
+          - {os: ubuntu-22.04, compiler: gcc13-cpp20-release, cmake_flags: "CPM_CHECK_VERSION_ENABLED=1"}
     steps:
       - name: Standard IV-project testing
         uses: iv-project/IVaction@v9.3
