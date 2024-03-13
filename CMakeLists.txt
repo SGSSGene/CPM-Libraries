@@ -146,10 +146,9 @@ CPMAddPackage("gh:alandefreitas/matplotplusplus@1.2.1")
 add_executable(matplotplusplus-cpp src/matplotplusplus.cpp)
 target_link_libraries(matplotplusplus-cpp PRIVATE matplot)
 
-set(SFML_BUILD_WINDOW OFF)
-CPMAddPackage("gh:SFML/SFML#2.6.1@2.6.1")
-add_executable(sfml-cpp src/sfml.cpp)
-target_link_libraries(sfml-cpp PRIVATE sfml-graphics)
+#CPMAddPackage("gh:SFML/SFML#2.6.1@2.6.1")
+#add_executable(sfml-cpp src/sfml.cpp)
+#target_link_libraries(sfml-cpp PRIVATE sfml-graphics)
 
 CPMAddPackage("gh:hanickadot/compile-time-regular-expressions@3.8.1")
 add_executable(ctre-cpp src/ctre.cpp)
