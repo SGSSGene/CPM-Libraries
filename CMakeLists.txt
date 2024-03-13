@@ -146,6 +146,9 @@ CPMAddPackage("gh:alandefreitas/matplotplusplus@1.2.1")
 add_executable(matplotplusplus-cpp src/matplotplusplus.cpp)
 target_link_libraries(matplotplusplus-cpp PRIVATE matplot)
 
+CPMAddPackage("gh:SFML/SFML#2.6.1@2.6.1")
+add_executable(sfml-cpp src/sfml.cpp)
+target_link_libraries(sfml-cpp PRIVATE sfml-graphics)
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
 #add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)

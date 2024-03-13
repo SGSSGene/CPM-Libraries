@@ -40,6 +40,7 @@
 | [unordered_dense](https://github.com/martinus/unordered_dense)       | v4.4.0     | `#!cmake CPMAddPackage("gh:martinus/unordered_dense@4.4.0")`                                        <br>CMakeTarget: `unordered_dense::unordered_dense`        <br>       |
 | [robin-hood-hashing](https://github.com/martinus/robin-hood-hashing) |  3.11.5    | `#!cmake CPMAddPackage("gh:martinus/robin-hood-hashing#3.11.5@3.11.5")`                             <br>CMakeTarget: `robin_hood::robin_hood`                  <br>       |
 | [matplotplusplus](https://github.com/alandefreitas/matplotplusplus)  | v1.2.1     | `#!cmake CPMAddPackage("gh:alandefreitas/matplotplusplus@1.2.1")`                                   <br>CMakeTarget: `matplot`                                 <br>       |
+| [sfml](https://github.com/SFML/SFML)                                 |  2.6.1     | `#!cmake CPMAddPackage("gh:SFML/SFML#2.6.1@2.6.1")`                                                 <br>CMakeTarget: `sfml-graphics sfml-network sfml-audio sfml-system sfml-window sfml-main sfml-activity` <br>       |
 
 
 
