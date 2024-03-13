@@ -12,7 +12,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.3")
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.4")
 
 CPMAddPackage("gh:fmtlib/fmt#10.2.1@10.2.1")
 add_executable(fmt-cpp src/fmt.cpp)
@@ -34,9 +34,9 @@ CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
 
-#CPMAddPackage("gh:ChunelFeng/CGraph#867e304b168da22ff4c3298a3b1c364502c41920") #!TODO broken
-#add_executable(cgraph-cpp src/cgraph.cpp)
-#target_link_libraries(cgraph-cpp PRIVATE CGraph)
+WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.5.4")
+add_executable(cgraph-cpp src/cgraph.cpp)
+target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
 CPMAddPackage("gh:rikyoz/bit7z@4.0.5")
 add_executable(bit7z-cpp src/bit7z.cpp)
