@@ -200,7 +200,7 @@ add_executable(pugixml-cpp src/pugixml.cpp)
 target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
 
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
-CPMAddPackage("gh:TheLartians/Format.cmake@1.0")
+#CPMAddPackage("gh:TheLartians/Format.cmake@1.0")
 
 #CPMAddPackage("gh:google/re2#2024-03-01")
 
