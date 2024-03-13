@@ -12,7 +12,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.4")
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.5")
 
 CPMAddPackage("gh:fmtlib/fmt#10.2.1@10.2.1")
 add_executable(fmt-cpp src/fmt.cpp)
