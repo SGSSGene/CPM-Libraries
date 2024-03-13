@@ -146,9 +146,37 @@ CPMAddPackage("gh:alandefreitas/matplotplusplus@1.2.1")
 add_executable(matplotplusplus-cpp src/matplotplusplus.cpp)
 target_link_libraries(matplotplusplus-cpp PRIVATE matplot)
 
+set(SFML_BUILD_WINDOW OFF)
 CPMAddPackage("gh:SFML/SFML#2.6.1@2.6.1")
 add_executable(sfml-cpp src/sfml.cpp)
 target_link_libraries(sfml-cpp PRIVATE sfml-graphics)
+
+CPMAddPackage("gh:hanickadot/compile-time-regular-expressions@3.8.1")
+add_executable(ctre-cpp src/ctre.cpp)
+target_link_libraries(ctre-cpp PRIVATE ctre::ctre)
+
+CPMAddPackage("gh:kkos/oniguruma@6.9.9")
+add_executable(oniguruma-cpp src/oniguruma.cpp)
+target_link_libraries(oniguruma-cpp PRIVATE onig)
+
+set(PCRE2_BUILD_TESTS OFF)
+CPMAddPackage("gh:PCRE2Project/pcre2#pcre2-10.43")
+add_executable(pcre2-cpp src/pcre2.cpp)
+target_link_libraries(pcre2-cpp PRIVATE pcre2-8-static)
+
+CPMAddPackage("gh:ClausKlein/boost-cmake@1.80.0")
+add_executable(boost-cpp src/boost.cpp)
+target_link_libraries(boost-cpp PRIVATE boost)
+
+WrappedCPMAddPackage("gh:intel/hyperscan@5.4.2")
+add_executable(hyperscan-cpp src/hyperscan.cpp)
+target_link_libraries(hyperscan-cpp PRIVATE hs::hs)
+
+WrappedCPMAddPackage("https://www.akenotsuki.com/misc/srell/releases/srell4_040.zip@4.040")
+add_executable(srell-cpp src/srell.cpp)
+target_link_libraries(srell-cpp PRIVATE srell::srell)
+
+#CPMAddPackage("gh:google/re2#2024-03-01")
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
 #add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)
