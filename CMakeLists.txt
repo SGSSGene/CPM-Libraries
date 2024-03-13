@@ -167,9 +167,9 @@ CPMAddPackage("gh:ClausKlein/boost-cmake@1.80.0")
 add_executable(boost-cpp src/boost.cpp)
 target_link_libraries(boost-cpp PRIVATE boost)
 
-WrappedCPMAddPackage("gh:intel/hyperscan@5.4.2")
-add_executable(hyperscan-cpp src/hyperscan.cpp)
-target_link_libraries(hyperscan-cpp PRIVATE hs::hs)
+#WrappedCPMAddPackage("gh:intel/hyperscan@5.4.2")
+#add_executable(hyperscan-cpp src/hyperscan.cpp)
+#target_link_libraries(hyperscan-cpp PRIVATE hs::hs)
 
 WrappedCPMAddPackage("https://www.akenotsuki.com/misc/srell/releases/srell4_040.zip@4.040")
 add_executable(srell-cpp src/srell.cpp)
