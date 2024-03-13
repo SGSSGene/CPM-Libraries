@@ -191,6 +191,9 @@ CPMAddPackage("gh:p-ranav/tabulate@1.0")
 add_executable(tabulate-cpp src/tabulate.cpp)
 target_link_libraries(tabulate-cpp PRIVATE tabulate)
 
+CPMAddPackage("gh:martinmoene/variant-lite@1.2.2")
+add_executable(variant-lite-cpp src/variant-lite.cpp)
+target_link_libraries(variant-lite-cpp PRIVATE variant-lite)
 
 #CPMAddPackage("gh:google/re2#2024-03-01")
 
