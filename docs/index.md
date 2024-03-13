@@ -51,6 +51,8 @@
 | [progress-cpp](https://github.com/prakhar1989/progress-cpp)            | #7bfba0d2   | `#!cmake CPMAddPackage("gh:prakhar1989/progress-cpp#7bfba0d22d19c41323aa35541618b6ebec9d737c")`     <br>CMakeTarget: `progresscpp`                             <br>       |
 | [tabulate](https://github.com/p-ranav/tabulate)                        | v1.0        | `#!cmake CPMAddPackage("gh:p-ranav/tabulate@1.0")`                                                  <br>CMakeTarget: `tabulate`                                <br>       |
 | [variant-lite](https://github.com/martinmoene/variant-lite)            | v1.2.2      | `#!cmake CPMAddPackage("gh:martinmoene/variant-lite@1.2.2")`                                        <br>CMakeTarget: `variant-lite`                            <br>       |
+| [pugixml](https://github.com/zeux/pugixml)                             | v1.14       | `#!cmake CPMAddPackage("gh:zeux/pugixml@1.14")`                                                     <br>CMakeTarget: `pugixml::static`                         <br>       |
+
 
 
 </div>
@@ -59,10 +61,12 @@
 
 <div markdown class="compact_data_table">
 
-| Name                                                                       | Version    | CPM                                                                                                                                                                       |
-|:---------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CMakeUseCCache](https://github.com/SGSSGene/CMakeUseCCache)               |    v1.0.0  | `#!cmake CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")`                                      <br>`#!cmake require_ccache() # activates ccache usage`    <br>          |
-| [iWrappedCPMAddPackage](https://github.com/SGSSGene/WrappedCPMAddPackage)  |    v0.2.0  | `#!cmake CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")`                                <br>`#!cmake WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")` # example usage <br>   |
+| Name                                                                                     | Version    | CPM                                                                                                                                                                       |
+|:-----------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [CMakeUseCCache](https://github.com/SGSSGene/CMakeUseCCache)                             |    v1.0.0  | `#!cmake CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")`                                      <br>`#!cmake require_ccache() # activates ccache usage`    <br>          |
+| [WrappedCPMAddPackage](https://github.com/SGSSGene/WrappedCPMAddPackage)                 |    v0.2.0  | `#!cmake CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")`                                <br>`#!cmake WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")` # example usage <br>   |
+| [GroupsourcesByFolder.cmake](https://github.com/TheLartians/GroupSourcesByFolder.cmake)  |    v1.0    | `#!cmake CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")`                         <br>                                                                     |
+| [Format.cmake](https://github.com/TheLartians/Format.cmake)                              |    v1.0    | `#!cmake CPMAddPackage("gh:TheLartians/Format.cmake@1.0")`                                       <br>                                                                     |
 
 </div>
 

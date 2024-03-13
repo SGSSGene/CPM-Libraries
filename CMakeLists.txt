@@ -195,6 +195,13 @@ CPMAddPackage("gh:martinmoene/variant-lite@1.2.2")
 add_executable(variant-lite-cpp src/variant-lite.cpp)
 target_link_libraries(variant-lite-cpp PRIVATE variant-lite)
 
+CPMAddPackage("gh:zeux/pugixml@1.14")
+add_executable(pugixml-cpp src/pugixml.cpp)
+target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
+
+CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
+CPMAddPackage("gh:TheLartians/Format.cmake@1.0")
+
 #CPMAddPackage("gh:google/re2#2024-03-01")
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
