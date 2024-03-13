@@ -67,6 +67,7 @@
 | [WrappedCPMAddPackage](https://github.com/SGSSGene/WrappedCPMAddPackage)                 |    v0.2.0  | `#!cmake CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.0")`                                <br>`#!cmake WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")` # example usage <br>   |
 | [GroupsourcesByFolder.cmake](https://github.com/TheLartians/GroupSourcesByFolder.cmake)  |    v1.0    | `#!cmake CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")`                         <br>                                                                     |
 | [Format.cmake](https://github.com/TheLartians/Format.cmake)                              |    v1.0    | `#!cmake CPMAddPackage("gh:TheLartians/Format.cmake@1.0")`                                       <br>                                                                     |
+| [cpm_version_check](https://github.com/SGSSGene/cpm_check_version)                       |    v0.1.1  | `#!cmake CPMAddPackage("gh:SGSSGene/cpm_check_version@0.1.1")`                                   <br>`#!cmake cpm_check_version([ignore_package1] [igonre_package2] ...)` |
 
 </div>
 
