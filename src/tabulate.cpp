@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2019 Pranav
+// SPDX-License-Identifier: MIT
+
 #include <tabulate/table.hpp>
 using namespace tabulate;
 
