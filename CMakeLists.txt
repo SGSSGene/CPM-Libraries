@@ -175,6 +175,23 @@ WrappedCPMAddPackage("https://www.akenotsuki.com/misc/srell/releases/srell4_040.
 add_executable(srell-cpp src/srell.cpp)
 target_link_libraries(srell-cpp PRIVATE srell::srell)
 
+WrappedCPMAddPackage("gh:antirez/linenoise#1.0@1.0")
+add_executable(linenoise-cpp src/linenoise.cpp)
+target_link_libraries(linenoise-cpp PRIVATE linenoise)
+
+WrappedCPMAddPackage("gh:jarro2783/cxxopts@2.2.0")
+add_executable(cxxopts-cpp src/cxxopts.cpp)
+target_link_libraries(cxxopts-cpp PRIVATE cxxopts)
+
+CPMAddPackage("gh:prakhar1989/progress-cpp#7bfba0d22d19c41323aa35541618b6ebec9d737c")
+add_executable(progress-cpp-cpp src/progress-cpp.cpp)
+target_link_libraries(progress-cpp-cpp PRIVATE progresscpp)
+
+CPMAddPackage("gh:p-ranav/tabulate@1.0")
+add_executable(tabulate-cpp src/tabulate.cpp)
+target_link_libraries(tabulate-cpp PRIVATE tabulate)
+
+
 #CPMAddPackage("gh:google/re2#2024-03-01")
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
