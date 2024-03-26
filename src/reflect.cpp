@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb
+// SPDX-FileCopyrightText: 2024 Kris Jusiak
 // SPDX-License-Identifier: BSL-1.0
 
 #include <reflect>
@@ -41,16 +41,16 @@ static_assert(42 == std::get<0>(t));
 static_assert(B  == std::get<1>(t));
 
 int main() {
-  // reflect::for_each
-  reflect::for_each([](const auto& member) {
-    std::cout << std::format("{}.{}:{}={{}} ({}/{}/{})\n",
-        reflect::type_name(f),
-        member.name,
-        member.type,            //
-//        member.value,           // foo.a:int=42 (4/4/0) //!TODO doesn't work??
-        member.size_of,         // foo.b:E=B (4/4/4)
-        member.align_of,        //
-        member.offset_of);
+  reflect::for_each([](auto I) {
+    std::cout
+      << reflect::type_name(f) << '.'                   // foo, foo
+      << reflect::member_name<I>(f) << ':'              // a  , b
+      << reflect::type_name(reflect::get<I>(f)) << '='  // int, E
+      << reflect::get<I>(f) << '('                      // 42 , B
+      << reflect::size_of<I>(f)                         // 4  , 4
+      << reflect::align_of<I>(f)                        // 4  , 4
+      << reflect::offset_of<I>(f) << ')'                // 0  , 4
+      << '\n';
   }, f);
 }
 
