@@ -54,10 +54,7 @@
 | [pugixml](https://github.com/zeux/pugixml)                             | v1.14       | `#!cmake CPMAddPackage("gh:zeux/pugixml@1.14")`                                                     <br>CMakeTarget: `pugixml::static`                         <br>       |
 | [fmindex-collection](https://github.com/SGSSGene/fmindex-collection)   | v0.3.0      | `#!cmake CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.0")`                                     <br>CMakeTarget: `fmindex-collection::fmindex-collection`  <br>       |
 | [ivio](https://github.com/iv-project/IVio)                             | v0.3.1      | `#!cmake CPMAddPackage("gh:iv-project/ivio@0.3.1")`                                                 <br>CMakeTarget: `ivio::ivio`                              <br>       |
-
-
-
-
+| [xxhash](https://github.com/Cyan4973/xxHash)                           | v0.8.2      | `#!cmake WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")`                                          <br>CMakeTarget: `xxhash`                                  <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 
 </div>
 

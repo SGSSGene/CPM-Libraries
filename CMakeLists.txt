@@ -208,6 +208,9 @@ CPMAddPackage("gh:iv-project/IVio@0.3.1")
 add_executable(ivio-cpp src/ivio.cpp)
 target_link_libraries(ivio-cpp PRIVATE ivio::ivio)
 
+WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")
+add_executable(xxhash-cpp src/xxhash.cpp)
+target_link_libraries(xxhash-cpp PRIVATE xxhash)
 
 
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
