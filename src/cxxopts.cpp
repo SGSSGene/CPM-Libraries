@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 #include <cxxopts.hpp>
+#include <iostream>
 
 int main(int argc, char** argv) {
     cxxopts::Options options("test", "A brief description");
