@@ -52,6 +52,10 @@
 | [tabulate](https://github.com/p-ranav/tabulate)                        | v1.0        | `#!cmake CPMAddPackage("gh:p-ranav/tabulate@1.0")`                                                  <br>CMakeTarget: `tabulate`                                <br>       |
 | [variant-lite](https://github.com/martinmoene/variant-lite)            | v1.2.2      | `#!cmake CPMAddPackage("gh:martinmoene/variant-lite@1.2.2")`                                        <br>CMakeTarget: `variant-lite`                            <br>       |
 | [pugixml](https://github.com/zeux/pugixml)                             | v1.14       | `#!cmake CPMAddPackage("gh:zeux/pugixml@1.14")`                                                     <br>CMakeTarget: `pugixml::static`                         <br>       |
+| [fmindex-collection](https://github.com/SGSSGene/fmindex-collection)   | v0.3.0      | `#!cmake CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.0")`                                     <br>CMakeTarget: `fmindex-collection::fmindex-collection`  <br>       |
+| [ivio](https://github.com/iv-project/IVio)                             | v0.3.1      | `#!cmake CPMAddPackage("gh:iv-project/ivio@0.3.1")`                                                 <br>CMakeTarget: `ivio::ivio`                              <br>       |
+
+
 
 
 

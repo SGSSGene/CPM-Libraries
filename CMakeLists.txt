@@ -199,6 +199,17 @@ CPMAddPackage("gh:zeux/pugixml@1.14")
 add_executable(pugixml-cpp src/pugixml.cpp)
 target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
 
+CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.0")
+add_executable(fmindex-collection-cpp src/fmindex-collection.cpp)
+target_link_libraries(fmindex-collection-cpp PRIVATE fmindex-collection::fmindex-collection)
+target_compile_options(fmindex-collection-cpp PRIVATE "-std=c++20")
+
+CPMAddPackage("gh:iv-project/IVio@0.3.1")
+add_executable(ivio-cpp src/ivio.cpp)
+target_link_libraries(ivio-cpp PRIVATE ivio::ivio)
+
+
+
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0")
 
