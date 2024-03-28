@@ -215,6 +215,10 @@ WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")
 add_executable(xxhash-cpp src/xxhash.cpp)
 target_link_libraries(xxhash-cpp PRIVATE xxhash)
 
+CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.0")
+add_executable(libsais-cpp src/libsais.cpp)
+target_link_libraries(libsais-cpp libsais)
+
 
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0")
