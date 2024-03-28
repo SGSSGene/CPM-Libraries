@@ -220,9 +220,6 @@ add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
 
-CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
-#CPMAddPackage("gh:TheLartians/Format.cmake@1.0")
-
 #CPMAddPackage("gh:google/re2#2024-03-01")
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
