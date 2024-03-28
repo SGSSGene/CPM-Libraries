@@ -12,7 +12,10 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.5")
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.7")
+CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
+CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
+#CPMAddPackage("gh:TheLartians/Format.cmake@1.0") # collides with yaml-cpp
 
 CPMAddPackage("gh:fmtlib/fmt#10.2.1@10.2.1")
 add_executable(fmt-cpp src/fmt.cpp)
@@ -38,7 +41,7 @@ WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.5.4")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
-CPMAddPackage("gh:rikyoz/bit7z@4.0.5")
+CPMAddPackage("gh:rikyoz/bit7z@4.0.6")
 add_executable(bit7z-cpp src/bit7z.cpp)
 target_link_libraries(bit7z-cpp PRIVATE bit7z)
 
@@ -54,7 +57,7 @@ WrappedCPMAddPackage("gh:USCiLab/cereal@1.3.2")
 add_executable(cereal-cpp src/cereal.cpp)
 target_link_libraries(cereal-cpp PRIVATE cereal::cereal)
 
-CPMAddPackage("gh:pybind/pybind11@2.11.1")
+CPMAddPackage("gh:pybind/pybind11@2.12.0")
 pybind11_add_module(pybind11-cpp src/pybind11.cpp)
 target_link_libraries(pybind11-cpp PRIVATE pybind11::pybind11)
 
@@ -74,11 +77,11 @@ WrappedCPMAddPackage("gh:google/googletest@1.14.0")
 add_executable(googletest-cpp src/googletest.cpp)
 target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
 
-WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.0")
+WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.1")
 add_executable(reflect-cpp src/reflect.cpp)
 target_link_libraries(reflect-cpp PRIVATE reflect::reflect)
 
-WrappedCPMAddPackage("gh:simd-everywhere/simde@0.7.6")
+WrappedCPMAddPackage("gh:simd-everywhere/simde@0.8.0")
 add_executable(simde-cpp src/simde.cpp)
 target_link_libraries(simde-cpp PRIVATE simde::simde)
 
@@ -86,7 +89,7 @@ WrappedCPMAddPackage("https://zlib.net/zlib-1.3.1.tar.gz@1.3.1")
 add_executable(zlib-cpp src/zlib.cpp)
 target_link_libraries(zlib-cpp PRIVATE zlib::zlib)
 
-WrappedCPMAddPackage("gh:facebook/zstd@1.5.5")
+WrappedCPMAddPackage("gh:facebook/zstd@1.5.6")
 add_executable(zstd-cpp src/zstd.cpp)
 target_link_libraries(zstd-cpp PRIVATE zstd::zstd)
 
@@ -109,7 +112,7 @@ target_link_libraries(glad-cpp PRIVATE glad glfw)
 #add_executable(cinder-cpp src/cinder.cpp)
 #target_link_libraries(cinder-cpp PRIVATE cinder)
 
-WrappedCPMAddPackage("gh:google/flatbuffers@24.3.7")
+WrappedCPMAddPackage("gh:google/flatbuffers@24.3.25")
 add_executable(flatbuffers-cpp src/flatbuffers.cpp)
 target_link_libraries(flatbuffers-cpp PRIVATE flatbuffers)
 
@@ -179,7 +182,7 @@ WrappedCPMAddPackage("gh:antirez/linenoise#1.0@1.0")
 add_executable(linenoise-cpp src/linenoise.cpp)
 target_link_libraries(linenoise-cpp PRIVATE linenoise)
 
-WrappedCPMAddPackage("gh:jarro2783/cxxopts@2.2.0")
+WrappedCPMAddPackage("gh:jarro2783/cxxopts@3.2.1")
 add_executable(cxxopts-cpp src/cxxopts.cpp)
 target_link_libraries(cxxopts-cpp PRIVATE cxxopts)
 
@@ -187,11 +190,11 @@ CPMAddPackage("gh:prakhar1989/progress-cpp#7bfba0d22d19c41323aa35541618b6ebec9d7
 add_executable(progress-cpp-cpp src/progress-cpp.cpp)
 target_link_libraries(progress-cpp-cpp PRIVATE progresscpp)
 
-CPMAddPackage("gh:p-ranav/tabulate@1.0")
+CPMAddPackage("gh:p-ranav/tabulate@1.5")
 add_executable(tabulate-cpp src/tabulate.cpp)
 target_link_libraries(tabulate-cpp PRIVATE tabulate)
 
-CPMAddPackage("gh:martinmoene/variant-lite@1.2.2")
+CPMAddPackage("gh:martinmoene/variant-lite@2.0.0")
 add_executable(variant-lite-cpp src/variant-lite.cpp)
 target_link_libraries(variant-lite-cpp PRIVATE variant-lite)
 
@@ -233,4 +236,8 @@ CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 
 CPMAddPackage("gh:SGSSGene/cpm_check_version@0.1.1")
 enable_testing()
-cpm_check_version(glad)
+cpm_check_version(
+    glad # doesn't work with the newest version
+    compile-time-regular-expressions # bad tags, hard to tell which is the newest
+    PackageProject.cmake # a dependency is based on this
+)
