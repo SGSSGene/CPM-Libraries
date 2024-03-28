@@ -28,7 +28,7 @@
 | [zstd](https://github.com/facebook/zstd)                               | v1.5.5      | `#!cmake WrappedCPMAddPackage("gh:facebook/zstd@1.5.5")`                                            <br>CMakeTarget: `zstd::zstd`                              <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 | [bzip2](https://sourceware.org/bzip2/)                                 | v1.0.8      | `#!cmake WrappedCPMAddPackage("https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz@1.0.8")`         <br>CMakeTarget: `bzip2::bzip2`                            <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 | [glad](https://github.com/Dav1dde/glad)                                | v0.1.36     | `#!cmake CPMAddPackage("gh:Dav1dde/glad@0.1.36")`                                                   <br>CMakeTarget: `glad`                                    <br>       |
-| [glm] (https://github.com/g-truc/glm)                                  |  1.0.1      | `#!cmake CPMAddPackage("gh:g-truc/glm#1.0.1@1.0.1")`                                                <br>CMakeTarget: `glm`                                     <br>       |
+| [glm](https://github.com/g-truc/glm)                                   |  1.0.1      | `#!cmake CPMAddPackage("gh:g-truc/glm#1.0.1@1.0.1")`                                                <br>CMakeTarget: `glm`                                     <br>       |
 | [glfw](https://github.com/glfw/glfw)                                   |  3.3.2      | `#!cmake WrappedCPMAddPackage("gh:glfw/glfw#3.4@3.4")`                                              <br>CMakeTarget: `glfw`                                    <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 | [Cinder](https://github.com/cinder/Cinder)                             | #a70e977b   | `#!cmake CPMAddPackage("gh:cinder/Cinder#a70e977b735ca493910984a56723280b66385059")`                <br>CMakeTarget: `cinder`                                  <br>       |
 | [flatbuffers](https://github.com/google/flatbuffers)                   | v24.3.7     | `#!cmake WrappedCPMAddPackage("gh:google/flatbuffers@24.3.7")`                                      <br>CMakeTarget: `flatbuffers`                             <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
@@ -76,10 +76,15 @@
 </div>
 
 # Not properly working
+
+<div markdown class="compact_data_table">
+
 | Name                                                                   | Remark |
+|:-----------------------------------------------------------------------|        |
 | [boost](https://github.com/ClausKlein/boost-cmake)                     | Only works for certain versions e.g.: `#!cmake CPMAddPackage("gh:ClausKlein/boost-cmake@1.80.0")` |
 | [re2](https://github.com/google/re2)                                   | Requires abseil, but unclear on how to get that working via CPM |
 
+</div>
 
 
 <!--
