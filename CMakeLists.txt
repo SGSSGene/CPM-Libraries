@@ -219,6 +219,10 @@ CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.0")
 add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
+CPMAddPackage("gh:doctest/doctest@2.4.11")
+add_executable(doctest-cpp src/doctest.cpp)
+target_link_libraries(doctest-cpp doctest::doctest_with_main)
+
 
 #CPMAddPackage("gh:google/re2#2024-03-01")
 

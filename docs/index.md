@@ -56,6 +56,7 @@
 | [ivio](https://github.com/iv-project/IVio)                             | v0.3.1      | `#!cmake CPMAddPackage("gh:iv-project/ivio@0.3.1")`                                                 <br>CMakeTarget: `ivio::ivio`                              <br>       |
 | [xxhash](https://github.com/Cyan4973/xxHash)                           | v0.8.2      | `#!cmake WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")`                                          <br>CMakeTarget: `xxhash`                                  <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 | [libsais](https://github.com/IlyaGrebnov/libsais)                      | v2.8.0      | `#!cmake CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.0")`                                             <br>CMakeTarget: `libsais`                                 <br>       |
+| [doctest](https://github.com/doctest/doctest)                          | v2.4.11     | `#!cmake CPMAddPackage("gh:doctest/doctest@2.4.11")`                                             <br>CMakeTarget: `libsais`                                    <br> use `#include <doctest/doctest.h>` |
 
 
 </div>
