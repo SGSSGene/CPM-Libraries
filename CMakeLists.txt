@@ -33,6 +33,7 @@ CPMAddPackage("gh:agauniyal/rang@3.2")
 add_executable(rang-cpp src/rang.cpp)
 target_link_libraries(rang-cpp PRIVATE rang)
 
+set(ABSL_ENABLE_INSTALL ON)
 CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
@@ -166,9 +167,9 @@ CPMAddPackage("gh:PCRE2Project/pcre2#pcre2-10.43")
 add_executable(pcre2-cpp src/pcre2.cpp)
 target_link_libraries(pcre2-cpp PRIVATE pcre2-8-static)
 
-CPMAddPackage("gh:ClausKlein/boost-cmake@1.80.0")
-add_executable(boost-cpp src/boost.cpp)
-target_link_libraries(boost-cpp PRIVATE boost)
+#CPMAddPackage("gh:ClausKlein/boost-cmake@1.80.0")
+#add_executable(boost-cpp src/boost.cpp)
+#target_link_libraries(boost-cpp PRIVATE boost)
 
 #WrappedCPMAddPackage("gh:intel/hyperscan@5.4.2")
 #add_executable(hyperscan-cpp src/hyperscan.cpp)
@@ -224,7 +225,9 @@ add_executable(doctest-cpp src/doctest.cpp)
 target_link_libraries(doctest-cpp doctest::doctest_with_main)
 
 
-#CPMAddPackage("gh:google/re2#2024-03-01")
+CPMAddPackage("gh:google/re2#2024-03-01")
+add_executable(re2-cpp src/re2.cpp)
+target_link_libraries(re2-cpp re2::re2)
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
 #add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)

@@ -56,7 +56,8 @@
 | [ivio](https://github.com/iv-project/IVio)                             | v0.3.1      | `#!cmake CPMAddPackage("gh:iv-project/ivio@0.3.1")`                                                 <br>CMakeTarget: `ivio::ivio`                              <br>       |
 | [xxhash](https://github.com/Cyan4973/xxHash)                           | v0.8.2      | `#!cmake WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")`                                          <br>CMakeTarget: `xxhash`                                  <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 | [libsais](https://github.com/IlyaGrebnov/libsais)                      | v2.8.0      | `#!cmake CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.0")`                                             <br>CMakeTarget: `libsais`                                 <br>       |
-| [doctest](https://github.com/doctest/doctest)                          | v2.4.11     | `#!cmake CPMAddPackage("gh:doctest/doctest@2.4.11")`                                             <br>CMakeTarget: `libsais`                                    <br> use `#include <doctest/doctest.h>` |
+| [doctest](https://github.com/doctest/doctest)                          | v2.4.11     | `#!cmake CPMAddPackage("gh:doctest/doctest@2.4.11")`                                                <br>CMakeTarget: `doctest::doctest`, `doctest::doctest_with_main` <br> use `#include <doctest/doctest.h>` |
+| [re2](https://github.com/google/re2)                                   | 2024-03-01  | `#!cmake CPMAddPackage("gh:google/re2#2024-03-01")`                                                 <br>CMakeTarget: `re2::re2`                                <br> Requires abseil with option `set(ABSL_ENABLE_INSTALL ON)` |
 
 
 </div>
@@ -83,7 +84,6 @@
 | Name                                                                   | Remark |
 |:-----------------------------------------------------------------------|        |
 | [boost](https://github.com/ClausKlein/boost-cmake)                     | Only works for certain versions e.g.: `#!cmake CPMAddPackage("gh:ClausKlein/boost-cmake@1.80.0")` |
-| [re2](https://github.com/google/re2)                                   | Requires abseil, but unclear on how to get that working via CPM |
 
 </div>
 
