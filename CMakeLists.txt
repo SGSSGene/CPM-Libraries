@@ -42,6 +42,17 @@ WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.5.4")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
+#!TODO add 7-zip as supported, currently only here to fix versioning in bit7z
+CPMAddPackage(NAME 7-zip
+                  GITHUB_REPOSITORY "rikyoz/7-Zip"
+                  VERSION 24.05
+                  DOWNLOAD_ONLY YES
+)
+if( 7-zip_ADDED )
+    add_library( 7-zip INTERFACE IMPORTED )
+    target_include_directories(7-zip INTERFACE "${7-zip_SOURCE_DIR}/CPP/")
+endif()
+
 CPMAddPackage("gh:rikyoz/bit7z@4.0.7")
 add_executable(bit7z-cpp src/bit7z.cpp)
 target_link_libraries(bit7z-cpp PRIVATE bit7z)
