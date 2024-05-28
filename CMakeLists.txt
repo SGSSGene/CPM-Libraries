@@ -203,7 +203,11 @@ CPMAddPackage("gh:zeux/pugixml@1.14")
 add_executable(pugixml-cpp src/pugixml.cpp)
 target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
 
-CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.0")
+CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.2")
+add_executable(libsais-cpp src/libsais.cpp)
+target_link_libraries(libsais-cpp libsais)
+
+CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.2")
 add_executable(fmindex-collection-cpp src/fmindex-collection.cpp)
 target_link_libraries(fmindex-collection-cpp PRIVATE fmindex-collection::fmindex-collection)
 target_compile_options(fmindex-collection-cpp PRIVATE "-std=c++20")
@@ -216,16 +220,13 @@ WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")
 add_executable(xxhash-cpp src/xxhash.cpp)
 target_link_libraries(xxhash-cpp PRIVATE xxhash)
 
-CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.0")
-add_executable(libsais-cpp src/libsais.cpp)
-target_link_libraries(libsais-cpp libsais)
 
 CPMAddPackage("gh:doctest/doctest@2.4.11")
 add_executable(doctest-cpp src/doctest.cpp)
 target_link_libraries(doctest-cpp doctest::doctest_with_main)
 
 
-CPMAddPackage("gh:google/re2#2024-03-01")
+CPMAddPackage("gh:google/re2#2024-05-01")
 add_executable(re2-cpp src/re2.cpp)
 target_link_libraries(re2-cpp re2::re2)
 
