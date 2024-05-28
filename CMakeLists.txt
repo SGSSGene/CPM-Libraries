@@ -34,7 +34,7 @@ add_executable(rang-cpp src/rang.cpp)
 target_link_libraries(rang-cpp PRIVATE rang)
 
 set(ABSL_ENABLE_INSTALL ON)
-CPMAddPackage("gh:abseil/abseil-cpp#20240116.1")
+CPMAddPackage("gh:abseil/abseil-cpp#20240116.2")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
 
@@ -42,7 +42,7 @@ WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.5.4")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
-CPMAddPackage("gh:rikyoz/bit7z@4.0.6")
+CPMAddPackage("gh:rikyoz/bit7z@4.0.7")
 add_executable(bit7z-cpp src/bit7z.cpp)
 target_link_libraries(bit7z-cpp PRIVATE bit7z)
 
@@ -66,11 +66,11 @@ CPMAddPackage("gh:jbeder/yaml-cpp#0.8.0@0.8.0")
 add_executable(yaml-cpp-cpp src/yaml-cpp.cpp)
 target_link_libraries(yaml-cpp-cpp PRIVATE yaml-cpp)
 
-CPMAddPackage("gh:biojppm/rapidyaml@0.5.0")
+CPMAddPackage("gh:biojppm/rapidyaml@0.6.0")
 add_executable(rapidyaml-cpp src/rapidyaml.cpp)
 target_link_libraries(rapidyaml-cpp PRIVATE ryml::ryml)
 
-WrappedCPMAddPackage("gh:google/benchmark@1.8.3")
+WrappedCPMAddPackage("gh:google/benchmark@1.8.4")
 add_executable(benchmark-cpp src/benchmark.cpp)
 target_link_libraries(benchmark-cpp PRIVATE benchmark::benchmark)
 
@@ -82,7 +82,7 @@ WrappedCPMAddPackage("gh:boost-ext/reflect@1.1.1")
 add_executable(reflect-cpp src/reflect.cpp)
 target_link_libraries(reflect-cpp PRIVATE reflect::reflect)
 
-WrappedCPMAddPackage("gh:simd-everywhere/simde@0.8.0")
+WrappedCPMAddPackage("gh:simd-everywhere/simde@0.8.2")
 add_executable(simde-cpp src/simde.cpp)
 target_link_libraries(simde-cpp PRIVATE simde::simde)
 
@@ -117,7 +117,7 @@ WrappedCPMAddPackage("gh:google/flatbuffers@24.3.25")
 add_executable(flatbuffers-cpp src/flatbuffers.cpp)
 target_link_libraries(flatbuffers-cpp PRIVATE flatbuffers)
 
-CPMAddPackage("gh:xtensor-stack/xsimd#12.1.1@12.1.1")
+CPMAddPackage("gh:xtensor-stack/xsimd#13.0.0@13.0.0")
 add_executable(xsimd-cpp src/xsimd.cpp)
 target_link_libraries(xsimd-cpp PRIVATE xsimd)
 target_compile_options(xsimd-cpp PUBLIC -mavx -mavx2)
@@ -126,7 +126,7 @@ CPMAddPackage("gh:xtensor-stack/xtl#0.7.7@0.7.7")
 add_executable(xtl-cpp src/xtl.cpp)
 target_link_libraries(xtl-cpp PRIVATE xtl)
 
-WrappedCPMAddPackage("gh:microsoft/mimalloc@2.1.2")
+WrappedCPMAddPackage("gh:microsoft/mimalloc@2.1.7")
 add_executable(mimalloc-cpp src/mimalloc.cpp)
 target_link_libraries(mimalloc-cpp PRIVATE mimalloc)
 
