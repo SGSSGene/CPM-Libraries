@@ -25,7 +25,7 @@ CPMAddPackage("gh:nlohmann/json@3.11.3")
 add_executable(nlohmann_json-cpp src/nlohmann_json.cpp)
 target_link_libraries(nlohmann_json-cpp PRIVATE nlohmann_json::nlohmann_json)
 
-CPMAddPackage("gh:catchorg/Catch2@3.5.3")
+CPMAddPackage("gh:catchorg/Catch2@3.6.0")
 add_executable(catch2-cpp src/catch2.cpp)
 target_link_libraries(catch2-cpp PRIVATE Catch2::Catch2WithMain)
 
