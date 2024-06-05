@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: 2006-2023, Knut Reinert & Freie Universität Berlin
 # SPDX-FileCopyrightText: 2016-2023, Knut Reinert & MPI für molekulare Genetik
 # SPDX-License-Identifier: CC0-1.0
-name: "Weekly CI"
+name: "Daily CI - check CPM versions"
 
 on:
   schedule:
-    - cron: '0 5 * * Mon'
+    - cron: '0 8 * * *'
 env:
   TZ: Europe/Berlin
 
@@ -22,12 +22,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {os: ubuntu-22.04, compiler: spdx_license_lint}
           - {os: ubuntu-22.04, compiler: cpm_version_check_inline}
-          - {os: ubuntu-22.04, compiler: gcc13-cpp20-release}
     steps:
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v9.11
+        uses: iv-project/IVaction@v9.12
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
