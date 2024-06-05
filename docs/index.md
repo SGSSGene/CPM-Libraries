@@ -57,7 +57,7 @@
 | [xxhash](https://github.com/Cyan4973/xxHash)                           | v0.8.2      | `#!cmake WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")`                                          <br>CMakeTarget: `xxhash`                                  <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
 | [libsais](https://github.com/IlyaGrebnov/libsais)                      | v2.8.2      | `#!cmake CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.2")`                                             <br>CMakeTarget: `libsais`                                 <br>       |
 | [doctest](https://github.com/doctest/doctest)                          | v2.4.11     | `#!cmake CPMAddPackage("gh:doctest/doctest@2.4.11")`                                                <br>CMakeTarget: `doctest::doctest`, `doctest::doctest_with_main` <br> use `#include <doctest/doctest.h>` |
-| [re2](https://github.com/google/re2)                                   | 2024-05-01  | `#!cmake CPMAddPackage("gh:google/re2#2024-05-01")`                                                 <br>CMakeTarget: `re2::re2`                                <br> Requires abseil with option `set(ABSL_ENABLE_INSTALL ON)` |
+| [re2](https://github.com/google/re2)                                   | 2024-06-01  | `#!cmake CPMAddPackage("gh:google/re2#2024-06-01")`                                                 <br>CMakeTarget: `re2::re2`                                <br> Requires abseil with option `set(ABSL_ENABLE_INSTALL ON)` |
 
 
 </div>

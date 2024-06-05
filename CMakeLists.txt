@@ -45,7 +45,7 @@ target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 #!TODO add 7-zip as supported, currently only here to fix versioning in bit7z
 CPMAddPackage(NAME 7-zip
                   GITHUB_REPOSITORY "rikyoz/7-Zip"
-                  VERSION 24.05
+                  VERSION 24.06
                   DOWNLOAD_ONLY YES
 )
 if( 7-zip_ADDED )
@@ -237,7 +237,7 @@ add_executable(doctest-cpp src/doctest.cpp)
 target_link_libraries(doctest-cpp doctest::doctest_with_main)
 
 
-CPMAddPackage("gh:google/re2#2024-05-01")
+CPMAddPackage("gh:google/re2#2024-06-01")
 add_executable(re2-cpp src/re2.cpp)
 target_link_libraries(re2-cpp re2::re2)
 

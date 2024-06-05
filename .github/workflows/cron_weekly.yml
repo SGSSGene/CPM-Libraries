@@ -6,11 +6,12 @@ name: "Weekly CI"
 on:
   schedule:
     - cron: '0 5 * * Mon'
+  workflow_dispatch:
 env:
   TZ: Europe/Berlin
 
 concurrency:
-  group: ${{ github.ref }}
+  group: weekly
   cancel-in-progress: true
 
 jobs:
@@ -23,12 +24,16 @@ jobs:
       matrix:
         include:
           - {os: ubuntu-22.04, compiler: spdx_license_lint}
-          - {os: ubuntu-22.04, compiler: cpm_version_check_inline}
           - {os: ubuntu-22.04, compiler: gcc13-cpp20-release}
     steps:
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v9.11
+        uses: iv-project/IVaction@v9.12
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
           cmake_flags: ${{ matrix.cmake_flags }}
+      - name: Open Issue
+        uses: jayqi/failed-build-issue-action@v1
+        if: failure()
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
