@@ -6,11 +6,12 @@ name: "Weekly CI"
 on:
   schedule:
     - cron: '0 5 * * Mon'
+  workflow_dispatch:
 env:
   TZ: Europe/Berlin
 
 concurrency:
-  group: ${{ github.ref }}
+  group: weekly
   cancel-in-progress: true
 
 jobs:
@@ -31,3 +32,8 @@ jobs:
           compiler: ${{ matrix.compiler }}
           threads: 2
           cmake_flags: ${{ matrix.cmake_flags }}
+      - name: Open Issue
+        uses: jayqi/failed-build-issue-action@v1
+        if: failure()
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
