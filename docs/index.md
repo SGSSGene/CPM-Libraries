@@ -58,6 +58,8 @@
 | [libsais](https://github.com/IlyaGrebnov/libsais)                      | v2.8.4      | `#!cmake CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.4")`                                             <br>CMakeTarget: `libsais`                                 <br>       |
 | [doctest](https://github.com/doctest/doctest)                          | v2.4.11     | `#!cmake CPMAddPackage("gh:doctest/doctest@2.4.11")`                                                <br>CMakeTarget: `doctest::doctest`, `doctest::doctest_with_main` <br> use `#include <doctest/doctest.h>` |
 | [re2](https://github.com/google/re2)                                   | 2024-06-01  | `#!cmake CPMAddPackage("gh:google/re2#2024-06-01")`                                                 <br>CMakeTarget: `re2::re2`                                <br> Requires abseil with option `set(ABSL_ENABLE_INSTALL ON)` |
+| [7-zip](https://github.com/rikyoz/7-zip)                               | v24.06      | `#!cmake WrappedCPMAddPackage("gh:rikyoz/7-Zip@24.06")`                                             <br>CMakeTarget: `7-zip::7-zip`                            <br> requires [WrapperCPMAddPackage](https://github.com/SGSSGene/WrapperCPMAddPackage) |
+
 
 
 </div>

@@ -12,7 +12,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.7")
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage#0d0b7af2c7a22a4a1de5228be669c29fafd26b6b")
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0") # collides with yaml-cpp
@@ -42,16 +42,9 @@ WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.6.0")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
-#!TODO add 7-zip as supported, currently only here to fix versioning in bit7z
-CPMAddPackage(NAME 7-zip
-                  GITHUB_REPOSITORY "rikyoz/7-Zip"
-                  VERSION 24.06
-                  DOWNLOAD_ONLY YES
-)
-if( 7-zip_ADDED )
-    add_library( 7-zip INTERFACE IMPORTED )
-    target_include_directories(7-zip INTERFACE "${7-zip_SOURCE_DIR}/CPP/")
-endif()
+WrappedCPMAddPackage("gh:rikyoz/7-Zip@24.06")
+add_executable(7-zip-cpp src/7-zip.cpp)
+target_link_libraries(7-zip-cpp PRIVATE 7-zip::7-zip)
 
 CPMAddPackage("gh:rikyoz/bit7z@4.0.7")
 add_executable(bit7z-cpp src/bit7z.cpp)
