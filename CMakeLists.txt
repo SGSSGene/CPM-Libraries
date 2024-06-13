@@ -77,7 +77,7 @@ CPMAddPackage("gh:jbeder/yaml-cpp#0.8.0@0.8.0")
 add_executable(yaml-cpp-cpp src/yaml-cpp.cpp)
 target_link_libraries(yaml-cpp-cpp PRIVATE yaml-cpp)
 
-CPMAddPackage("gh:biojppm/rapidyaml@0.6.0")
+CPMAddPackage("gh:biojppm/rapidyaml@0.7.0")
 add_executable(rapidyaml-cpp src/rapidyaml.cpp)
 target_link_libraries(rapidyaml-cpp PRIVATE ryml::ryml)
 
@@ -214,7 +214,7 @@ CPMAddPackage("gh:zeux/pugixml@1.14")
 add_executable(pugixml-cpp src/pugixml.cpp)
 target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
 
-CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.2")
+CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.3")
 add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
