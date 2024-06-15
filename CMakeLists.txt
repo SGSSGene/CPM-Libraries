@@ -214,7 +214,7 @@ CPMAddPackage("gh:zeux/pugixml@1.14")
 add_executable(pugixml-cpp src/pugixml.cpp)
 target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
 
-CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.3")
+CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.4")
 add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
