@@ -38,7 +38,7 @@ CPMAddPackage("gh:abseil/abseil-cpp#20240116.2")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
 
-WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.5.4")
+WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.6.0")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
@@ -214,7 +214,7 @@ CPMAddPackage("gh:zeux/pugixml@1.14")
 add_executable(pugixml-cpp src/pugixml.cpp)
 target_link_libraries(pugixml-cpp PRIVATE pugixml::static)
 
-CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.3")
+CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.4")
 add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
