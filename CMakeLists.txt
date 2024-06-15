@@ -38,7 +38,7 @@ CPMAddPackage("gh:abseil/abseil-cpp#20240116.2")
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
 
-WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.5.4")
+WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.6.0")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
