@@ -12,7 +12,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage#0d0b7af2c7a22a4a1de5228be669c29fafd26b6b")
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.9")
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0") # collides with yaml-cpp
@@ -224,7 +224,6 @@ WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")
 add_executable(xxhash-cpp src/xxhash.cpp)
 target_link_libraries(xxhash-cpp PRIVATE xxhash)
 
-
 CPMAddPackage("gh:doctest/doctest@2.4.11")
 add_executable(doctest-cpp src/doctest.cpp)
 target_link_libraries(doctest-cpp doctest::doctest_with_main)
@@ -233,6 +232,10 @@ target_link_libraries(doctest-cpp doctest::doctest_with_main)
 CPMAddPackage("gh:google/re2#2024-06-01")
 add_executable(re2-cpp src/re2.cpp)
 target_link_libraries(re2-cpp re2::re2)
+
+WrappedCPMAddPackage("gh:xxsds/sdsl-lite@3.0.3")
+add_executable(sdsl-lite-cpp src/sdsl-lite.cpp)
+target_link_libraries(sdsl-lite-cpp PRIVATE sdsl-lite::sdsl-lite)
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
 #add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)
