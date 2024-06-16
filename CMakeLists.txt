@@ -12,7 +12,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage("gh:SGSSGene/CMakeUseCCache@1.0.0")
 require_ccache()
 
-CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.7")
+CPMAddPackage("gh:SGSSGene/WrappedCPMAddPackage@0.2.9")
 CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0") # collides with yaml-cpp
@@ -42,16 +42,9 @@ WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.6.0")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
-#!TODO add 7-zip as supported, currently only here to fix versioning in bit7z
-CPMAddPackage(NAME 7-zip
-                  GITHUB_REPOSITORY "rikyoz/7-Zip"
-                  VERSION 24.06
-                  DOWNLOAD_ONLY YES
-)
-if( 7-zip_ADDED )
-    add_library( 7-zip INTERFACE IMPORTED )
-    target_include_directories(7-zip INTERFACE "${7-zip_SOURCE_DIR}/CPP/")
-endif()
+WrappedCPMAddPackage("gh:rikyoz/7-Zip@24.06")
+add_executable(7-zip-cpp src/7-zip.cpp)
+target_link_libraries(7-zip-cpp PRIVATE 7-zip::7-zip)
 
 CPMAddPackage("gh:rikyoz/bit7z@4.0.7")
 add_executable(bit7z-cpp src/bit7z.cpp)
@@ -231,7 +224,6 @@ WrappedCPMAddPackage("gh:Cyan4973/xxHash@0.8.2")
 add_executable(xxhash-cpp src/xxhash.cpp)
 target_link_libraries(xxhash-cpp PRIVATE xxhash)
 
-
 CPMAddPackage("gh:doctest/doctest@2.4.11")
 add_executable(doctest-cpp src/doctest.cpp)
 target_link_libraries(doctest-cpp doctest::doctest_with_main)
@@ -240,6 +232,10 @@ target_link_libraries(doctest-cpp doctest::doctest_with_main)
 CPMAddPackage("gh:google/re2#2024-06-01")
 add_executable(re2-cpp src/re2.cpp)
 target_link_libraries(re2-cpp re2::re2)
+
+WrappedCPMAddPackage("gh:xxsds/sdsl-lite@3.0.3")
+add_executable(sdsl-lite-cpp src/sdsl-lite.cpp)
+target_link_libraries(sdsl-lite-cpp PRIVATE sdsl-lite::sdsl-lite)
 
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
 #add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)
