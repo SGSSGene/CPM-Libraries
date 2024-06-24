@@ -42,7 +42,7 @@ WrappedCPMAddPackage("gh:ChunelFeng/CGraph@2.6.0")
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
 
-WrappedCPMAddPackage("gh:rikyoz/7-Zip@24.06")
+WrappedCPMAddPackage("gh:rikyoz/7-Zip@24.07")
 add_executable(7-zip-cpp src/7-zip.cpp)
 target_link_libraries(7-zip-cpp PRIVATE 7-zip::7-zip)
 
