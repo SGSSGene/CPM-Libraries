@@ -62,7 +62,7 @@ WrappedCPMAddPackage("gh:USCiLab/cereal@1.3.2")
 add_executable(cereal-cpp src/cereal.cpp)
 target_link_libraries(cereal-cpp PRIVATE cereal::cereal)
 
-CPMAddPackage("gh:pybind/pybind11@2.12.0")
+CPMAddPackage("gh:pybind/pybind11@2.13.0")
 pybind11_add_module(pybind11-cpp src/pybind11.cpp)
 target_link_libraries(pybind11-cpp PRIVATE pybind11::pybind11)
 
