@@ -17,7 +17,7 @@ CPMAddPackage("gh:TheLartians/GroupSourcesByFolder.cmake@1.0")
 CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0") # collides with yaml-cpp
 
-CPMAddPackage("gh:fmtlib/fmt#10.2.1@10.2.1")
+CPMAddPackage("gh:fmtlib/fmt#11.0.0@11.0.0")
 add_executable(fmt-cpp src/fmt.cpp)
 target_link_libraries(fmt-cpp PRIVATE fmt::fmt)
 
