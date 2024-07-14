@@ -78,7 +78,7 @@ WrappedCPMAddPackage("gh:google/benchmark@1.8.4")
 add_executable(benchmark-cpp src/benchmark.cpp)
 target_link_libraries(benchmark-cpp PRIVATE benchmark::benchmark)
 
-WrappedCPMAddPackage("gh:google/googletest@1.14.0")
+CPMAddPackage("gh:google/googletest@1.14.0")
 add_executable(googletest-cpp src/googletest.cpp)
 target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
 
