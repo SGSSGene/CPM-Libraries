@@ -66,7 +66,7 @@
       "github_repository": "abseil/abseil-cpp",
       "git_tag": "20240116.2",
       "options": [
-        "ABSL_ENABLE_INSTALL OFF",
+        "ABSL_ENABLE_INSTALL ON",
         "ABSL_PROPAGATE_CXX_STD ON"
       ]
     },
@@ -249,7 +249,7 @@
       "version": "1.15.0",
       "github_repository": "google/googletest",
       "options": [
-        "BUILD_GMOCK OFF"
+        "BUILD_GMOCK ON"
       ]
     },
     {
