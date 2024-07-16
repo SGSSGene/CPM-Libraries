@@ -211,7 +211,7 @@ CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.4")
 add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
-CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.2")
+CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.3")
 add_executable(fmindex-collection-cpp src/fmindex-collection.cpp)
 target_link_libraries(fmindex-collection-cpp PRIVATE fmindex-collection::fmindex-collection)
 target_compile_options(fmindex-collection-cpp PRIVATE "-std=c++20")
