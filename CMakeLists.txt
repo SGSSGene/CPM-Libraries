@@ -78,7 +78,7 @@ WrappedCPMAddPackage("gh:google/benchmark@1.8.4")
 add_executable(benchmark-cpp src/benchmark.cpp)
 target_link_libraries(benchmark-cpp PRIVATE benchmark::benchmark)
 
-CPMAddPackage("gh:google/googletest@1.14.0")
+CPMAddPackage("gh:google/googletest@1.15.0")
 add_executable(googletest-cpp src/googletest.cpp)
 target_link_libraries(googletest-cpp PRIVATE GTest::gtest)
 
@@ -211,7 +211,7 @@ CPMAddPackage("gh:IlyaGrebnov/libsais@2.8.4")
 add_executable(libsais-cpp src/libsais.cpp)
 target_link_libraries(libsais-cpp libsais)
 
-CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.2")
+CPMAddPackage("gh:SGSSGene/fmindex-collection@0.3.3")
 add_executable(fmindex-collection-cpp src/fmindex-collection.cpp)
 target_link_libraries(fmindex-collection-cpp PRIVATE fmindex-collection::fmindex-collection)
 target_compile_options(fmindex-collection-cpp PRIVATE "-std=c++20")
