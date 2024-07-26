@@ -19,9 +19,9 @@
     },
     {
       "name": "fmt",
-      "version": "11.0.1",
+      "version": "11.0.2",
       "github_repository": "fmtlib/fmt",
-      "git_tag": "11.0.1"
+      "git_tag": "11.0.2"
     },
     {
       "name": "nlohman_json",
@@ -411,7 +411,7 @@
       "github_repository": "SGSSGene/cpm_check_version",
       "cmake_commands": [
         "enable_testing()",
-        "cpm_check_version(glad compile-time-regular-expressions PackageProject.cmake)"
+        "cpm_check_version(glad compile-time-regular-expressions PackageProject.cmake bit7z absl reflect benchmark CGraph re2)"
       ]
     }
   ]
