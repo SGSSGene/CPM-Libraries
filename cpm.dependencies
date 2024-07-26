@@ -214,7 +214,10 @@
       "name": "re2",
       "version": "2024-06-01",
       "github_repository": "google/re2",
-      "git_tag": "2024-06-01"
+      "git_tag": "2024-06-01",
+      "options": [
+        "BUILD_SHARED_LIBS OFF"
+      ]
     },
     {
       "name": "sdsl-lite",
