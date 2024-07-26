@@ -28,6 +28,7 @@ target_link_libraries(rang-cpp PRIVATE rang)
 
 add_executable(abseil-cpp src/abseil.cpp)
 target_link_libraries(abseil-cpp PRIVATE absl::strings)
+target_compile_options(abseil-cpp PUBLIC -fpic)
 
 add_executable(cgraph-cpp src/cgraph.cpp)
 target_link_libraries(cgraph-cpp PRIVATE cgraph::cgraph)
