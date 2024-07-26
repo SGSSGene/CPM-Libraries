@@ -105,7 +105,8 @@
     {
       "name": "glad",
       "version": "0.1.36",
-      "github_repository": "Dav1dde/glad"
+      "github_repository": "Dav1dde/glad",
+      "git_tag_ignore": [ "v2.*" ]
     },
     {
       "name": "xsimd",
@@ -138,7 +139,8 @@
     {
       "name": "compile-time-regular-expressions",
       "version": "3.8.1",
-      "github_repository": "hanickadot/compile-time-regular-expressions"
+      "github_repository": "hanickadot/compile-time-regular-expressions",
+      "git_tag_ignore": [ "cppcon2018", "2017" ]
     },
     {
       "name": "oniguruma",
@@ -200,7 +202,8 @@
       "cmake_commands": [
         "add_library(xxhash ${CPM_CURRENT_SOURCE_DIR}/xxhash.c ${CPM_CURRENT_SOURCE_DIR}/xxh_x86dispatch.c)",
         "target_include_directories(xxhash SYSTEM INTERFACE $<BUILD_INTERFACE:${CPM_CURRENT_SOURCE_DIR}>)"
-      ]
+      ],
+      "git_tag_ignore": ["r[0-9]*"]
     },
     {
       "name": "doctest",
@@ -222,7 +225,8 @@
         "add_library(sdsl-lite INTERFACE)",
         "target_include_directories(sdsl-lite INTERFACE SYSTEM ${CPM_CURRENT_SOURCE_DIR}/include)",
         "add_library(sdsl-lite::sdsl-lite ALIAS sdsl-lite)"
-      ]
+      ],
+      "git_tag_ignore": ["[Cc]++.*"]
     },
     {
       "name": "cereal",
@@ -297,7 +301,8 @@
       "cmake_commands": [
         "add_subdirectory(${CPM_CURRENT_SOURCE_DIR}/build/cmake zstd)",
         "add_library(zstd::zstd ALIAS libzstd_static)"
-      ]
+      ],
+      "git_tag_ignore": ["fuzz-corpora2"]
     },
     {
       "name": "bzip2",
@@ -340,7 +345,8 @@
       "github_repository": "microsoft/mimalloc",
       "options": [
         "MI_BUILD_TESTS OFF"
-      ]
+      ],
+      "git_tag_ignore": [ "win-m4", "M3", "show", "list" ]
     },
     {
       "name": "libsamplerate",
