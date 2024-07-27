@@ -154,9 +154,9 @@
     },
     {
       "name": "pcre2",
-      "version": "10.43",
+      "version": "10.44",
       "github_repository": "PCRE2Project/pcre2",
-      "git_tag": "pcre2-10.43",
+      "git_tag": "pcre2-10.44",
       "options": [
         "PCRE2_BUILD_TESTS OFF"
       ]
