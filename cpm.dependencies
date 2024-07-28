@@ -154,9 +154,9 @@
     },
     {
       "name": "pcre2",
-      "version": "10.43",
+      "version": "10.44",
       "github_repository": "PCRE2Project/pcre2",
-      "git_tag": "pcre2-10.43",
+      "git_tag": "pcre2-10.44",
       "options": [
         "PCRE2_BUILD_TESTS OFF"
       ]
@@ -219,9 +219,9 @@
     },
     {
       "name": "re2",
-      "version": "2024-06-01",
+      "version": "2024-07-02",
       "github_repository": "google/re2",
-      "git_tag": "2024-06-01",
+      "git_tag": "2024-07-02",
       "options": [
         "BUILD_SHARED_LIBS OFF"
       ]
@@ -252,7 +252,7 @@
     },
     {
       "name": "benchmark",
-      "version": "1.8.4",
+      "version": "1.8.5",
       "github_repository": "google/benchmark",
       "options": [
         "BENCHMARK_ENABLE_TESTING OFF",
