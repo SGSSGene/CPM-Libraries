@@ -140,7 +140,7 @@
     },
     {
       "name": "compile-time-regular-expressions",
-      "version": "3.8.1",
+      "version": "3.9.0",
       "github_repository": "hanickadot/compile-time-regular-expressions",
       "git_tag_ignore": [
         "cppcon2018",
