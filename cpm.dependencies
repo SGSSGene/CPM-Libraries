@@ -262,7 +262,7 @@
     },
     {
       "name": "googletest",
-      "version": "1.15.0",
+      "version": "1.15.2",
       "github_repository": "google/googletest",
       "options": [
         "BUILD_GMOCK ON"
