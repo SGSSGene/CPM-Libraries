@@ -64,11 +64,12 @@
     {
       "name": "absl",
       "github_repository": "abseil/abseil-cpp",
-      "git_tag": "20240116.2",
+      "git_tag": "20240722.0",
       "options": [
         "ABSL_ENABLE_INSTALL ON",
         "ABSL_PROPAGATE_CXX_STD ON"
-      ]
+      ],
+      "version": "20240722.0"
     },
     {
       "name": "bit7z",
