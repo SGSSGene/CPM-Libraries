@@ -46,7 +46,7 @@
     },
     {
       "name": "7-Zip",
-      "version": "24.07",
+      "version": "24.08",
       "github_repository": "rikyoz/7-Zip",
       "cmake_commands": [
         "file(GLOB SOURCE_FILES ${CPM_CURRENT_SOURCE_DIR}/C/*.c)",
