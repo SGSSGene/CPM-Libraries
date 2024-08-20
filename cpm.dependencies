@@ -30,7 +30,7 @@
     },
     {
       "name": "Catch2",
-      "version": "3.6.0",
+      "version": "3.7.0",
       "github_repository": "catchorg/Catch2"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "name": "7-Zip",
-      "version": "24.07",
+      "version": "24.08",
       "github_repository": "rikyoz/7-Zip",
       "cmake_commands": [
         "file(GLOB SOURCE_FILES ${CPM_CURRENT_SOURCE_DIR}/C/*.c)",
@@ -64,11 +64,12 @@
     {
       "name": "absl",
       "github_repository": "abseil/abseil-cpp",
-      "git_tag": "20240116.2",
+      "git_tag": "20240722.0",
       "options": [
         "ABSL_ENABLE_INSTALL ON",
         "ABSL_PROPAGATE_CXX_STD ON"
-      ]
+      ],
+      "version": "20240722.0"
     },
     {
       "name": "bit7z",
@@ -88,7 +89,7 @@
     },
     {
       "name": "pybind11",
-      "version": "2.13.1",
+      "version": "2.13.4",
       "github_repository": "pybind/pybind11"
     },
     {
@@ -99,7 +100,7 @@
     },
     {
       "name": "rapidyaml",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "github_repository": "biojppm/rapidyaml"
     },
     {
@@ -186,17 +187,17 @@
     },
     {
       "name": "libsais",
-      "version": "2.8.4",
+      "version": "2.8.5",
       "github_repository": "IlyaGrebnov/libsais"
     },
     {
       "name": "fmindex-collection",
-      "version": "0.3.3",
+      "version": "0.4.0",
       "github_repository": "SGSSGene/fmindex-collection"
     },
     {
       "name": "IVio",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "github_repository": "iv-project/IVio"
     },
     {
@@ -252,7 +253,7 @@
     },
     {
       "name": "benchmark",
-      "version": "1.8.5",
+      "version": "1.9.0",
       "github_repository": "google/benchmark",
       "options": [
         "BENCHMARK_ENABLE_TESTING OFF",
@@ -262,7 +263,7 @@
     },
     {
       "name": "googletest",
-      "version": "1.15.0",
+      "version": "1.15.2",
       "github_repository": "google/googletest",
       "options": [
         "BUILD_GMOCK ON"
