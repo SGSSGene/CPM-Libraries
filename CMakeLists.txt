@@ -9,6 +9,7 @@ project(CPM-Libraries LANGUAGES CXX C
 
 include(cmake/CPM.cmake)
 
+set(BUILD_SHARED_LIBS OFF)
 CPMAddPackage("gh:SGSSGene/cpm.dependencies@0.0.7")
 CPMLoadDependenciesFile("${CMAKE_SOURCE_DIR}/cpm.dependencies")
 
