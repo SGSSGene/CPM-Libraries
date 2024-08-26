@@ -89,7 +89,7 @@
     },
     {
       "name": "pybind11",
-      "version": "2.13.4",
+      "version": "2.13.5",
       "github_repository": "pybind/pybind11"
     },
     {
