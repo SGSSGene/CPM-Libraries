@@ -8,7 +8,7 @@
     },
     {
       "name": "PackageProject.cmake",
-      "version": "1.11.2",
+      "version": "1.12.0",
       "github_repository": "TheLartians/PackageProject.cmake"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "name": "pybind11",
-      "version": "2.13.5",
+      "version": "2.13.6",
       "github_repository": "pybind/pybind11"
     },
     {
