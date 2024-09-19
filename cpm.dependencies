@@ -30,12 +30,12 @@
     },
     {
       "name": "Catch2",
-      "version": "3.7.0",
+      "version": "3.7.1",
       "github_repository": "catchorg/Catch2"
     },
     {
       "name": "CGraph",
-      "version": "2.6.0",
+      "version": "2.6.1",
       "github_repository": "ChunelFeng/CGraph",
       "cmake_commands": [
         "add_library(cgraph STATIC $<TARGET_OBJECTS:CGraph>)",
