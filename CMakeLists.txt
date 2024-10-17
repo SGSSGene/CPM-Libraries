@@ -10,7 +10,7 @@ project(CPM-Libraries LANGUAGES CXX C
 include(cmake/CPM.cmake)
 
 set(BUILD_SHARED_LIBS OFF)
-CPMAddPackage("gh:SGSSGene/cpm.dependencies@0.0.7")
+CPMAddPackage("gh:SGSSGene/cpm.dependencies@0.0.8")
 CPMLoadDependenciesFile("${CMAKE_SOURCE_DIR}/cpm.dependencies")
 
 #CPMAddPackage("gh:TheLartians/Format.cmake@1.0") # collides with yaml-cpp

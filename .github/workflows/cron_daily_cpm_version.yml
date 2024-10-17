@@ -23,16 +23,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {os: ubuntu-22.04, compiler: cpm_version_check_inline}
+          - {os: ubuntu-22.04, compiler: cpm_fix_version}
     steps:
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v9.16
+        uses: iv-project/IVaction@v9.17
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
           cmake_flags: ${{ matrix.cmake_flags }}
-      - name: Open Issue
-        uses: jayqi/failed-build-issue-action@v1.2.0
-        if: failure()
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
