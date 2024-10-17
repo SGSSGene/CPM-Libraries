@@ -271,7 +271,7 @@
     },
     {
       "name": "reflect",
-      "version": "v1.2.4",
+      "version": "1.2.3",
       "github_repository": "boost-ext/reflect",
       "cmake_commands": [
         "add_library(reflect INTERFACE)",
