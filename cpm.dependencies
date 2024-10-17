@@ -155,7 +155,7 @@
     },
     {
       "name": "pcre2",
-      "version": "10.43",
+      "version": "10.44",
       "github_repository": "PCRE2Project/pcre2",
       "git_tag": "pcre2-{VERSION}",
       "options": [
@@ -271,7 +271,7 @@
     },
     {
       "name": "reflect",
-      "version": "1.2.3",
+      "version": "1.2.4",
       "github_repository": "boost-ext/reflect",
       "cmake_commands": [
         "add_library(reflect INTERFACE)",
