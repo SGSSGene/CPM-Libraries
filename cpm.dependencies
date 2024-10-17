@@ -21,7 +21,7 @@
       "name": "fmt",
       "version": "11.0.2",
       "github_repository": "fmtlib/fmt",
-      "git_tag": "11.0.2"
+      "git_tag": "{VERSION}"
     },
     {
       "name": "nlohman_json",
@@ -63,13 +63,13 @@
     },
     {
       "name": "absl",
+      "version": "20240722.0",
       "github_repository": "abseil/abseil-cpp",
-      "git_tag": "20240722.0",
+      "git_tag": "{VERSION}",
       "options": [
         "ABSL_ENABLE_INSTALL ON",
         "ABSL_PROPAGATE_CXX_STD ON"
-      ],
-      "version": "20240722.0"
+      ]
     },
     {
       "name": "bit7z",
@@ -96,7 +96,7 @@
       "name": "yaml-cpp",
       "version": "0.8.0",
       "github_repository": "jbeder/yaml-cpp",
-      "git_tag": "0.8.0"
+      "git_tag": "{VERSION}"
     },
     {
       "name": "rapidyaml",
@@ -115,13 +115,13 @@
       "name": "xsimd",
       "version": "13.0.0",
       "github_repository": "xtensor-stack/xsimd",
-      "git_tag": "13.0.0"
+      "git_tag": "{VERSION}"
     },
     {
       "name": "xtl",
       "version": "0.7.7",
       "github_repository": "xtensor-stack/xtl",
-      "git_tag": "0.7.7"
+      "git_tag": "{VERSION}"
     },
     {
       "name": "unordered_dense",
@@ -132,7 +132,7 @@
       "name": "robin-hood-hashing",
       "version": "3.11.5",
       "github_repository": "martinus/robin-hood-hashing",
-      "git_tag": "3.11.5"
+      "git_tag": "{VERSION}"
     },
     {
       "name": "matplotplusplus",
@@ -155,9 +155,9 @@
     },
     {
       "name": "pcre2",
-      "version": "10.44",
+      "version": "10.43",
       "github_repository": "PCRE2Project/pcre2",
-      "git_tag": "pcre2-10.44",
+      "git_tag": "pcre2-{VERSION}",
       "options": [
         "PCRE2_BUILD_TESTS OFF"
       ]
@@ -222,7 +222,7 @@
       "name": "re2",
       "version": "2024-07-02",
       "github_repository": "google/re2",
-      "git_tag": "2024-07-02",
+      "git_tag": "{VERSION}",
       "options": [
         "BUILD_SHARED_LIBS OFF"
       ]
@@ -334,7 +334,7 @@
       "name": "glfw",
       "version": "3.4",
       "github_repository": "glfw/glfw",
-      "git_tag": "3.4",
+      "git_tag": "{VERSION}",
       "options": [
         "GLFW_BUILD_TESTS OFF",
         "GLFW_BUILD_EXAMPLES OFF",
@@ -372,7 +372,7 @@
       "name": "libsamplerate",
       "version": "0.2.2",
       "github_repository": "libsndfile/libsamplerate",
-      "git_tag": "0.2.2",
+      "git_tag": "{VERSION}",
       "options": [
         "BUILD_TESTING OFF",
         "LIBSAMPLERATE_EXAMPLES OFF",
@@ -384,7 +384,7 @@
       "name": "libsndfile",
       "version": "1.2.2",
       "github_repository": "libsndfile/libsndfile",
-      "git_tag": "1.2.2",
+      "git_tag": "{VERSION}",
       "options": [
         "BUILD_TESTING OFF",
         "BUILD_PROGRAMS OFF",
@@ -409,7 +409,7 @@
       "name": "linenoise",
       "version": "1.0",
       "github_repository": "antirez/linenoise",
-      "git_tag": "1.0",
+      "git_tag": "{VERSION}",
       "download_only": true,
       "cmake_commands": [
         "add_library(linenoise ${CPM_CURRENT_SOURCE_DIR}/linenoise.c)",
