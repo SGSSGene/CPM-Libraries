@@ -26,7 +26,7 @@ jobs:
           - {os: ubuntu-22.04, compiler: cpm_update_version}
     steps:
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@0b0e27de32fda884478b4ffe73be611cf52c109a
+        uses: iv-project/IVaction@v9.18
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
