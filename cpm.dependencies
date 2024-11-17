@@ -42,7 +42,7 @@
     {
       "homepage": "https://github.com/ChunelFeng/CGraph",
       "name": "CGraph",
-      "version": "2.6.1",
+      "version": "2.6.2",
       "github_repository": "ChunelFeng/CGraph",
       "cmake_commands": [
         "add_library(cgraph STATIC $<TARGET_OBJECTS:CGraph>)",
