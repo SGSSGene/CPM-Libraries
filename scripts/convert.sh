@@ -7,9 +7,13 @@ set -Eeuo pipefail
 file=cpm.dependencies
 SPDX="SPDX"
 
-echo "# ${SPDX}-FileCopyrightText: 2024 Simon Gene Gottlieb"
-echo "# ${SPDX}-License-Identifier: CC0-1.0"
-for name in $(jq -r '.packages[].name' ${file}); do
+
+(
+echo "<!--"
+echo "    SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb"
+echo "    SPDX-License-Identifier: CC0-1.0"
+echo "-->"
+for name in $(jq -r '[.packages[].name] | sort_by(.) | .[]' ${file}); do
     export NAME=${name}
     description=$(yq -r '.[env.NAME].description' more_info.yaml)
     homepage=$(yq -r '.[env.NAME].homepage' more_info.yaml)
@@ -30,6 +34,7 @@ for name in $(jq -r '.packages[].name' ${file}); do
     echo "</td>"
     echo "</tr>"
 #    echo "| [${name}](${homepage}) | ${version} | <pre><code>${code}</code></pre> |"
-done > /tmp/convert.sh
+done
+)> /tmp/convert.sh
 cat /tmp/convert.sh
 rm /tmp/convert.sh

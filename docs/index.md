@@ -1,5 +1,6 @@
-<!-- SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb
-     SPDX-License-Identifier: CC0-1.0
+<!--
+    SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb
+    SPDX-License-Identifier: CC0-1.0
 -->
 # Libraries
 
@@ -16,7 +17,6 @@
 </tr>
 {%
     include-markdown "lines.md"
-    start="# SPDX-License-Identifier: CC0-1.0"
 %}
 </table>
 </div>
