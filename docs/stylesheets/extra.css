@@ -33,3 +33,14 @@ SPDX-License-Identifier: CC0-1.0
 .compact_data_table table tbody tr:nth-child(even) {
     background: #FFF;
 }
+.compact_data_table > .md-typeset__scrollwrap {
+    overflow-x: visible;
+}
+a {
+    font-size: 1.4em;
+}
+/*.abstract {
+    color: #000;
+    background-color: #ccc !important;
+    border-color: #999 !important;
+}*/

@@ -1,0 +1,271 @@
+GroupSourcesByFolder.cmake:
+  homepage: "https://github.com/TheLartians/GroupSourcesByFolder.cmake"
+  description: "Automatically group sources by folder structure for Visual Studio/Xcode generators"
+  categories:
+    - tools
+    - cpm
+PackageProject.cmake:
+  homepage: "https://github.com/TheLartians/PackageProject.cmake"
+  description: "🏛️ Help other developers use your project. A CMake script for packaging C/C++ projects for simple project installation while employing best-practices for maximum compatibility."
+  categories:
+    - tools
+    - cpm
+CMakeUseCCache:
+  homepage: "https://github.com/SGSSGene/CMakeUseCCache"
+  description: "Enables auto usage of ccache with cmake and CPM"
+  categories:
+    - tools
+    - cpm
+fmt:
+  homepage: "https://github.com/fmtlib/fmt"
+  description: "A modern formatting library"
+  categories:
+    - miscellaneous
+nlohman_json:
+  homepage: "https://github.com/nlohmann/json"
+  description: "JSON for Modern C++"
+  categories:
+    - json
+Catch2:
+  homepage: "https://github.com/catchorg/Catch2"
+  description: "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later"
+  categories:
+    - debug
+CGraph:
+  homepage: "https://github.com/ChunelFeng/CGraph"
+  description: "A common used C++ DAG framework"
+  categories:
+    - frameworks
+7-Zip:
+  homepage: "https://github.com/rikyoz/7-zip"
+  description: "[UNOFFICIAL MIRROR] A file archiver with a high compression ratio"
+  categories:
+    - compression
+rang:
+  homepage: "https://github.com/agauniyal/rang"
+  description: "A Minimal, Header only Modern c++ library for terminal goodies 💄✨"
+  categories:
+    - terminal
+absl:
+  homepage: "https://github.com/abseil/abseil-cpp"
+  description: "Abseil Common Libraries (C++)"
+  categories:
+    - framework
+bit7z:
+  homepage: "https://github.com/rikyoz/bit7z"
+  description: "A C++ static library offering a clean and simple interface to the 7-zip shared libraries."
+  categories:
+    - compression
+tomlplusplus:
+  homepage: "https://github.com/marzer/tomlplusplus"
+  description: "Header-only TOML config file parser and serializer for C++17."
+  categories:
+    - configuration
+nanobench:
+  homepage: "https://github.com/martinus/nanobench"
+  description: "Simple, fast, accurate single-header microbenchmarking functionality for C++11/14/17/20"
+  categories:
+    - debug
+pybind11:
+  homepage: "https://github.com/pybind/pybind11"
+  description: "Seamless operability between C++11 and Python"
+  categories:
+    - scripting
+yaml-cpp:
+  homepage: "https://github.com/jbeder/yaml-cpp"
+  description: "A YAML parser and emitter in C++"
+  categories:
+    - yaml
+rapidyaml:
+  homepage: "https://github.com/biojppm/rapidyaml"
+  description: "Rapid YAML - a library to parse and emit YAML, and do it fast"
+  categories:
+    - yaml
+glad:
+  homepage: "https://github.com/Dav1dde/glad"
+  description: "Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs."
+  categories:
+    - graphics
+xsimd:
+  homepage: "https://github.com/xtensor-stack/xsimd"
+  description: "C++ wrappers for SIMD intrinsics and parallelized, optimized mathematical functions (SSE, AVX, AVX512, NEON, SVE))"
+  categories:
+    - simd
+xtl:
+  homepage: "https://github.com/xtensor-stack/xtl"
+  description: "The x template library"
+  categories:
+    - framework
+unordered_dense:
+  homepage: "https://github.com/martinus/unordered_dense"
+  description: "A fast & densely stored hashmap and hashset based on robin-hood backward shift deletion"
+  categories:
+    - containers
+robin-hood-hashing:
+  homepage: "https://github.com/martinus/robin-hood-hashing"
+  description: "Fast & memory efficient hashtable based on robin hood hashing for C++11/14/17/20"
+  categories:
+    - containers
+matplotplusplus:
+  homepage: "https://github.com/alandefreitas/matplotplusplus"
+  description: "Matplot++: A C++ Graphics Library for Data Visualization 📊🗾"
+  categories:
+    - visualization
+compile-time-regular-expressions:
+  homepage: "https://github.com/hanickadot/compile-time-regular-expressions"
+  description: " Compile Time Regular Expression in C++"
+  categories:
+    - regex
+oniguruma:
+  homepage: "https://github.com/kkos/oniguruma"
+  description: "regular expression library"
+  categories:
+    - regex
+pcre2:
+  homepage: "https://github.com/PCRE2Project/pcre2"
+  description: "PCRE2 development is now based here."
+  categories:
+    - regex
+progress-cpp:
+  homepage: "https://github.com/prakhar1989/progress-cpp"
+  description: "A flexible ASCII progress-bar for C++"
+  categories:
+    - terminal
+tabulate:
+  homepage: "https://github.com/p-ranav/tabulate"
+  description: "Table Maker for Modern C++"
+  categories:
+    - terminal
+variant-lite:
+  homepage: "https://github.com/martinmoene/variant-lite"
+  description: "variant lite - A C++17-like variant, a type-safe union for C++98, C++11 and later in a single-file header-only library"
+  categories:
+    - container
+pugixml:
+  homepage: "https://github.com/zeux/pugixml"
+  description: "Light-weight, simple and fast XML parser for C++ with XPath support"
+  categories:
+    - xml
+libsais:
+  homepage: "https://github.com/IlyaGrebnov/libsais"
+  description: "libsais is a library for linear time suffix array, longest common prefix array and burrows wheeler transform construction based on induced sorting algorithm."
+  categories:
+    - bioinformatic
+fmindex-collection:
+  homepage: "https://github.com/SGSSGene/fmindex-collection"
+  description: "missing"
+  categories:
+    - bioinformatic
+IVio:
+  homepage: "https://github.com/iv-project/IVio"
+  description: "IO library for file formats used in bioinformatics"
+  categories:
+    - bioinformatic
+    - fileformat
+xxHash:
+  homepage: "https://github.com/Cyan4973/xxHash"
+  description: "Extremely fast non-cryptographic hash algorithm"
+  categories:
+    - hashing
+doctest:
+  homepage: "https://github.com/doctest/doctest"
+  description: "The fastest feature-rich C++11/14/17/20/23 single-header testing framework"
+  categories:
+    - debug
+re2:
+  homepage: "https://github.com/google/re2"
+  description: "RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library."
+  categories:
+    - regex
+sdsl-lite:
+  homepage: "https://github.com/xxsds/sdsl-lite"
+  description: "Succinct Data Structure Library 3.0"
+  categories:
+    - bioinformatic
+cereal:
+  homepage: "https://github.com/USCiLab/cereal"
+  description: "A C++11 library for serialization"
+  categories:
+    - serialization
+benchmark:
+  homepage: "https://github.com/google/benchmark"
+  description: "A microbenchmark support library"
+  categories:
+    - debug
+googletest:
+  homepage: "https://github.com/google/googletest"
+  description: "GoogleTest - Google Testing and Mocking Framework"
+  categories:
+    - debug
+reflect:
+  homepage: "https://github.com/boost-ext/reflect"
+  description: "C++20 Static Reflection library"
+  categories:
+    - reflection
+simde:
+  homepage: "https://github.com/simd-everywhere/simde"
+  description: "Implementations of SIMD instruction sets for systems which don't natively support them."
+  categories:
+    - simd
+zlib:
+  homepage: "https://zlib.net"
+  description: "A Massively Spiffy Yet Delicately Unobtrusive Compression Library"
+  categories:
+    - compression
+zstd:
+  homepage: "https://github.com/facebook/zstd"
+  description: "Zstandard - Fast real-time compression algorithm"
+  categories:
+    - compression
+bzip2:
+  homepage: "https://sourceware.org/bzip2/"
+  description: "bzip2 is a freely available, patent free (see below), high-quality data compressor."
+  categories:
+    - compression
+glfw:
+  homepage: "https://github.com/glfw/glfw"
+  description: "A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input"
+  categories:
+    - graphics
+flatbuffers:
+  homepage: "https://github.com/google/flatbuffers"
+  description: "FlatBuffers: Memory Efficient Serialization Library"
+  categories:
+    - serialization
+mimalloc:
+  homepage: "https://github.com/microsoft/mimalloc"
+  description: "mimalloc is a compact general purpose allocator with excellent performance."
+  categories:
+    - memory allocation
+libsamplerate:
+  homepage: "https://github.com/libsndfile/libsamplerate"
+  description: "An audio Sample Rate Conversion library"
+  categories:
+    - audio
+libsndfile:
+  homepage: "https://github.com/libsndfile/libsndfile"
+  description: "A C library for reading and writing sound files containing sampled audio data."
+  categories:
+    - audio
+    - fileformat
+srell:
+  homepage: "https://www.akenotsuki.com/misc/srell/en/"
+  description: "SRELL (std::regex-like library) is a Unicode-aware regular expression template library for C++."
+  categories:
+    - regex
+linenoise:
+  homepage: "https://github.com/antirez/linenoise"
+  description: "A small self-contained alternative to readline and libedit"
+  categories:
+    - terminal
+cxxopts:
+  homepage: "https://github.com/jarro2783/cxxopts"
+  description: "Lightweight C++ command line option parser"
+  categories:
+    - terminal
+cpm_check_version:
+  homepage: "https://github.com/SGSSGene/cpm_check_version"
+  description: "CMake+CPM packages helping to check for newer package versions"
+  categories:
+    - tools
+    - cpm
