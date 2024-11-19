@@ -2,45 +2,38 @@
   "format_version": "1",
   "packages": [
     {
-      "homepage": "https://github.com/TheLartians/GroupSourcesByFolder.cmake",
       "name": "GroupSourcesByFolder.cmake",
       "version": "1.0",
       "github_repository": "TheLartians/GroupSourcesByFolder.cmake"
     },
     {
-      "homepage": "https://github.com/TheLartians/PackageProject.cmake",
       "name": "PackageProject.cmake",
       "version": "1.12.0",
       "github_repository": "TheLartians/PackageProject.cmake"
     },
     {
-      "homepage": "https://github.com/SGSSGene/CMakeUseCCache",
       "name": "CMakeUseCCache",
       "version": "1.0.0",
       "github_repository": "SGSSGene/CMakeUseCCache",
       "cmake_commands": "require_ccache()"
     },
     {
-      "homepage": "https://github.com/fmtlib/fmt",
       "name": "fmt",
       "version": "11.0.2",
       "github_repository": "fmtlib/fmt",
       "git_tag": "{VERSION}"
     },
     {
-      "homepage": "https://github.com/nlohmann/json",
       "name": "nlohman_json",
       "version": "3.11.3",
       "github_repository": "nlohmann/json"
     },
     {
-      "homepage": "https://github.com/catchorg/Catch2",
       "name": "Catch2",
       "version": "3.7.1",
       "github_repository": "catchorg/Catch2"
     },
     {
-      "homepage": "https://github.com/ChunelFeng/CGraph",
       "name": "CGraph",
       "version": "2.6.2",
       "github_repository": "ChunelFeng/CGraph",
@@ -52,7 +45,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/rikyoz/7-zip",
       "name": "7-Zip",
       "version": "24.08",
       "github_repository": "rikyoz/7-Zip",
@@ -65,13 +57,11 @@
       ]
     },
     {
-      "homepage": "https://github.com/agauniyal/rang",
       "name": "rang",
       "version": "3.2",
       "github_repository": "agauniyal/rang"
     },
     {
-      "homepage": "https://github.com/abseil/abseil-cpp",
       "name": "absl",
       "version": "20240722.0",
       "github_repository": "abseil/abseil-cpp",
@@ -82,45 +72,38 @@
       ]
     },
     {
-      "homepage": "https://github.com/rikyoz/bit7z",
       "name": "bit7z",
       "version": "4.0.7-dirty",
       "github_repository": "rikyoz/bit7z",
       "git_tag": "f04d819e8eb82474532e3da4925e5dd247ea35bb"
     },
     {
-      "homepage": "https://github.com/marzer/tomlplusplus",
       "name": "tomlplusplus",
       "version": "3.4.0",
       "github_repository": "marzer/tomlplusplus"
     },
     {
-      "homepage": "https://github.com/martinus/nanobench",
       "name": "nanobench",
       "version": "4.3.11",
       "github_repository": "martinus/nanobench"
     },
     {
-      "homepage": "https://github.com/pybind/pybind11",
       "name": "pybind11",
       "version": "2.13.6",
       "github_repository": "pybind/pybind11"
     },
     {
-      "homepage": "https://github.com/jbeder/yaml-cpp",
       "name": "yaml-cpp",
       "version": "0.8.0",
       "github_repository": "jbeder/yaml-cpp",
       "git_tag": "{VERSION}"
     },
     {
-      "homepage": "https://github.com/biojppm/rapidyaml",
       "name": "rapidyaml",
       "version": "0.7.2",
       "github_repository": "biojppm/rapidyaml"
     },
     {
-      "homepage": "https://github.com/Dav1dde/glad",
       "name": "glad",
       "version": "0.1.36",
       "github_repository": "Dav1dde/glad",
@@ -129,40 +112,34 @@
       ]
     },
     {
-      "homepage": "https://github.com/xtensor-stack/xsimd",
       "name": "xsimd",
       "version": "13.0.0",
       "github_repository": "xtensor-stack/xsimd",
       "git_tag": "{VERSION}"
     },
     {
-      "homepage": "https://github.com/xtensor-stack/xtl",
       "name": "xtl",
       "version": "0.7.7",
       "github_repository": "xtensor-stack/xtl",
       "git_tag": "{VERSION}"
     },
     {
-      "homepage": "https://github.com/martinus/unordered_dense",
       "name": "unordered_dense",
       "version": "4.4.0",
       "github_repository": "martinus/unordered_dense"
     },
     {
-      "homepage": "https://github.com/martinus/robin-hood-hashing",
       "name": "robin-hood-hashing",
       "version": "3.11.5",
       "github_repository": "martinus/robin-hood-hashing",
       "git_tag": "{VERSION}"
     },
     {
-      "homepage": "https://github.com/alandefreitas/matplotplusplus",
       "name": "matplotplusplus",
       "version": "1.2.1",
       "github_repository": "alandefreitas/matplotplusplus"
     },
     {
-      "homepage": "https://github.com/hanickadot/compile-time-regular-expressions",
       "name": "compile-time-regular-expressions",
       "version": "3.9.0",
       "github_repository": "hanickadot/compile-time-regular-expressions",
@@ -172,13 +149,11 @@
       ]
     },
     {
-      "homepage": "https://github.com/kkos/oniguruma",
       "name": "oniguruma",
       "version": "6.9.9",
       "github_repository": "kkos/oniguruma"
     },
     {
-      "homepage": "https://github.com/PCRE2Project/pcre2",
       "name": "pcre2",
       "version": "10.44",
       "github_repository": "PCRE2Project/pcre2",
@@ -188,25 +163,21 @@
       ]
     },
     {
-      "homepage": "https://github.com/prakhar1989/progress-cpp",
       "name": "progress-cpp",
       "github_repository": "prakhar1989/progress-cpp",
       "git_tag": "7bfba0d22d19c41323aa35541618b6ebec9d737c"
     },
     {
-      "homepage": "https://github.com/p-ranav/tabulate",
       "name": "tabulate",
       "version": "1.5",
       "github_repository": "p-ranav/tabulate"
     },
     {
-      "homepage": "https://github.com/martinmoene/variant-lite",
       "name": "variant-lite",
       "version": "2.0.0",
       "github_repository": "martinmoene/variant-lite"
     },
     {
-      "homepage": "https://github.com/zeux/pugixml",
       "name": "pugixml",
       "version": "1.14",
       "github_repository": "zeux/pugixml",
@@ -215,25 +186,21 @@
       ]
     },
     {
-      "homepage": "https://github.com/IlyaGrebnov/libsais",
       "name": "libsais",
       "version": "2.8.5",
       "github_repository": "IlyaGrebnov/libsais"
     },
     {
-      "homepage": "https://github.com/SGSSGene/fmindex-collection",
       "name": "fmindex-collection",
       "version": "0.4.3",
       "github_repository": "SGSSGene/fmindex-collection"
     },
     {
-      "homepage": "https://github.com/iv-project/IVio",
       "name": "IVio",
       "version": "0.4.3",
       "github_repository": "iv-project/IVio"
     },
     {
-      "homepage": "https://github.com/Cyan4973/xxHash",
       "name": "xxHash",
       "version": "0.8.2",
       "github_repository": "Cyan4973/xxHash",
@@ -247,13 +214,11 @@
       ]
     },
     {
-      "homepage": "https://github.com/doctest/doctest",
       "name": "doctest",
       "version": "2.4.11",
       "github_repository": "doctest/doctest"
     },
     {
-      "homepage": "https://github.com/google/re2",
       "name": "re2",
       "version": "2024-07-02",
       "github_repository": "google/re2",
@@ -263,7 +228,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/xxsds/sdsl-lite",
       "name": "sdsl-lite",
       "version": "3.0.3",
       "github_repository": "xxsds/sdsl-lite",
@@ -278,7 +242,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/USCiLab/cereal",
       "name": "cereal",
       "version": "1.3.2",
       "github_repository": "USCiLab/cereal",
@@ -289,7 +252,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/google/benchmark",
       "name": "benchmark",
       "version": "1.9.0",
       "github_repository": "google/benchmark",
@@ -300,7 +262,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/google/googletest",
       "name": "googletest",
       "version": "1.15.2",
       "github_repository": "google/googletest",
@@ -309,7 +270,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/boost-ext/reflect",
       "name": "reflect",
       "version": "1.2.4",
       "github_repository": "boost-ext/reflect",
@@ -321,7 +281,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/simd-everywhere/simde",
       "name": "simde",
       "version": "0.8.2",
       "github_repository": "simd-everywhere/simde",
@@ -334,7 +293,6 @@
       ]
     },
     {
-      "homepage": "https://zlib.net/zlib-1.3.1.tar.gz",
       "name": "zlib",
       "version": "1.3.1",
       "url": "https://zlib.net/zlib-1.3.1.tar.gz",
@@ -346,7 +304,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/facebook/zstd",
       "name": "zstd",
       "version": "1.5.6",
       "github_repository": "facebook/zstd",
@@ -363,7 +320,6 @@
       ]
     },
     {
-      "homepage": "https://sourceware.org/bzip2/",
       "name": "bzip2",
       "version": "1.0.8",
       "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
@@ -375,7 +331,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/glfw/glfw",
       "name": "glfw",
       "version": "3.4",
       "github_repository": "glfw/glfw",
@@ -391,7 +346,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/google/flatbuffers",
       "name": "flatbuffers",
       "version": "24.3.25",
       "github_repository": "google/flatbuffers",
@@ -401,7 +355,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/microsoft/mimalloc",
       "name": "mimalloc",
       "version": "2.1.7",
       "github_repository": "microsoft/mimalloc",
@@ -416,7 +369,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/libsndfile/libsamplerate",
       "name": "libsamplerate",
       "version": "0.2.2",
       "github_repository": "libsndfile/libsamplerate",
@@ -429,7 +381,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/libsndfile/libsndfile",
       "name": "libsndfile",
       "version": "1.2.2",
       "github_repository": "libsndfile/libsndfile",
@@ -444,7 +395,6 @@
       ]
     },
     {
-      "homepage": "https://www.akenotsuki.com/misc/srell/en/",
       "name": "srell",
       "version": "4.040",
       "url": "https://www.akenotsuki.com/misc/srell/releases/srell4_040.zip",
@@ -456,7 +406,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/antirez/linenoise",
       "name": "linenoise",
       "version": "1.0",
       "github_repository": "antirez/linenoise",
@@ -468,7 +417,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/jarro2783/cxxopts",
       "name": "cxxopts",
       "version": "3.2.1",
       "github_repository": "jarro2783/cxxopts",
@@ -478,7 +426,6 @@
       ]
     },
     {
-      "homepage": "https://github.com/SGSSGene/cpm_check_version",
       "name": "cpm_check_version",
       "version": "0.1.1",
       "github_repository": "SGSSGene/cpm_check_version",
