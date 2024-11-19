@@ -10,8 +10,8 @@ SPDX="SPDX"
 
 (
 echo "<!--"
-echo "    SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb"
-echo "    SPDX-License-Identifier: CC0-1.0"
+echo "    ${SPDX}-FileCopyrightText: 2024 Simon Gene Gottlieb"
+echo "    ${SPDX}-License-Identifier: CC0-1.0"
 echo "-->"
 for name in $(jq -r '[.packages[].name] | sort_by(.) | .[]' ${file}); do
     export NAME=${name}
