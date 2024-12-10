@@ -113,7 +113,7 @@
     },
     {
       "name": "xsimd",
-      "version": "13.0.0",
+      "version": "13.1.0",
       "github_repository": "xtensor-stack/xsimd",
       "git_tag": "{VERSION}"
     },
