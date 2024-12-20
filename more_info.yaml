@@ -171,6 +171,7 @@ nlohman_json:
   description: JSON for Modern C++
   categories:
     - json
+    - fileformat
 oniguruma:
   homepage: https://github.com/kkos/oniguruma
   description: regular expression library
@@ -206,6 +207,7 @@ rapidyaml:
   description: Rapid YAML - a library to parse and emit YAML, and do it fast
   categories:
     - yaml
+    - fileformat
 re2:
   homepage: https://github.com/google/re2
   description: RE2 is a fast, safe, thread-friendly alternative to backtracking regular
@@ -282,6 +284,7 @@ yaml-cpp:
   description: A YAML parser and emitter in C++
   categories:
     - yaml
+    - fileformat
 zlib:
   homepage: https://zlib.net
   description: A Massively Spiffy Yet Delicately Unobtrusive Compression Library
