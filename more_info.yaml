@@ -121,6 +121,12 @@ googletest:
   description: GoogleTest - Google Testing and Mocking Framework
   categories:
     - debug
+jsoncpp:
+  homepage: https://github.com/open-source-parsers/jsoncpp
+  description: A C++ library for interacting with JSON.
+  categories:
+    - json
+    - fileformat
 libsais:
   homepage: https://github.com/IlyaGrebnov/libsais
   description: libsais is a library for linear time suffix array, longest common prefix

@@ -433,6 +433,15 @@
         "enable_testing()",
         "cpm_check_version(glad compile-time-regular-expressions PackageProject.cmake bit7z absl reflect benchmark CGraph re2)"
       ]
+    },
+    {
+      "name": "jsoncpp",
+      "version": "1.9.6",
+      "github_repository": "open-source-parsers/jsoncpp",
+      "git_tag": "{VERSION}",
+      "options": [
+        "JSONCPP_WITH_TESTS OFF"
+      ]
     }
   ]
 }
