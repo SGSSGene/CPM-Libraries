@@ -68,9 +68,14 @@ cereal:
   description: A C++11 library for serialization
   categories:
     - serialization
+cndl:
+  homepage: https://github.com/nerdmaennchen/cndl
+  description: 'An easy to use embeddable webserver (incl websockets) for your C++ project'
+  categories:
+    - webserver
 compile-time-regular-expressions:
   homepage: https://github.com/hanickadot/compile-time-regular-expressions
-  description: ' Compile Time Regular Expression in C++'
+  description: 'Compile Time Regular Expression in C++'
   categories:
     - regex
 cpm_check_version:
@@ -121,6 +126,12 @@ googletest:
   description: GoogleTest - Google Testing and Mocking Framework
   categories:
     - debug
+jsoncpp:
+  homepage: https://github.com/open-source-parsers/jsoncpp
+  description: A C++ library for interacting with JSON.
+  categories:
+    - json
+    - fileformat
 libsais:
   homepage: https://github.com/IlyaGrebnov/libsais
   description: libsais is a library for linear time suffix array, longest common prefix
@@ -165,6 +176,7 @@ nlohman_json:
   description: JSON for Modern C++
   categories:
     - json
+    - fileformat
 oniguruma:
   homepage: https://github.com/kkos/oniguruma
   description: regular expression library
@@ -200,6 +212,7 @@ rapidyaml:
   description: Rapid YAML - a library to parse and emit YAML, and do it fast
   categories:
     - yaml
+    - fileformat
 re2:
   homepage: https://github.com/google/re2
   description: RE2 is a fast, safe, thread-friendly alternative to backtracking regular
@@ -227,6 +240,11 @@ simde:
     support them.
   categories:
     - simd
+simplyfile:
+  homepage: https://github.com/gottliebtfreitag/simplyfile
+  description: C++ wrappers around unix filedescriptors
+  categories:
+    - wrapper
 srell:
   homepage: https://www.akenotsuki.com/misc/srell/en/
   description: SRELL (std::regex-like library) is a Unicode-aware regular expression
@@ -276,6 +294,7 @@ yaml-cpp:
   description: A YAML parser and emitter in C++
   categories:
     - yaml
+    - fileformat
 zlib:
   homepage: https://zlib.net
   description: A Massively Spiffy Yet Delicately Unobtrusive Compression Library

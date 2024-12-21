@@ -189,6 +189,15 @@ target_link_libraries(re2-cpp re2::re2)
 add_executable(sdsl-lite-cpp src/sdsl-lite.cpp)
 target_link_libraries(sdsl-lite-cpp PRIVATE sdsl-lite::sdsl-lite)
 
+add_executable(jsoncpp-cpp src/jsoncpp.cpp)
+target_link_libraries(jsoncpp-cpp jsoncpp_static)
+
+add_executable(simplyfile-cpp src/simplyfile.cpp)
+target_link_libraries(simplyfile-cpp simplyfile)
+
+add_executable(cndl-cpp src/cndl.cpp)
+target_link_libraries(cndl-cpp cndl::cndl)
+
 #CPMAddPackage("gh:SparkyStudios/AmplitudeAudioSDK#0232292ebb0f206b3990a98cf5adc8590065c4dd")
 #add_executable(amplitudeaudiosdk-cpp src/amplitudeaudiosdk.cpp)
 #target_linkk_libraries(amplitudeaudiosdk-cpp PRIVATE SparkyStudios::Audio::Amplitude::SDK::Static)
