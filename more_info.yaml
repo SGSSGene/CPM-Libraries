@@ -68,9 +68,14 @@ cereal:
   description: A C++11 library for serialization
   categories:
     - serialization
+cndl:
+  homepage: https://github.com/nerdmaennchen/cndl
+  description: 'An easy to use embeddable webserver (incl websockets) for your C++ project'
+  categories:
+    - webserver
 compile-time-regular-expressions:
   homepage: https://github.com/hanickadot/compile-time-regular-expressions
-  description: ' Compile Time Regular Expression in C++'
+  description: 'Compile Time Regular Expression in C++'
   categories:
     - regex
 cpm_check_version:
@@ -235,6 +240,11 @@ simde:
     support them.
   categories:
     - simd
+simplyfile:
+  homepage: https://github.com/gottliebtfreitag/simplyfile
+  description: C++ wrappers around unix filedescriptors
+  categories:
+    - wrapper
 srell:
   homepage: https://www.akenotsuki.com/misc/srell/en/
   description: SRELL (std::regex-like library) is a Unicode-aware regular expression
