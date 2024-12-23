@@ -5,12 +5,12 @@
 <tr markdown>
 <td>
 <a href="https://github.com/rikyoz/7-zip">7-Zip</a><br>[UNOFFICIAL MIRROR] A file archiver with a high compression ratio</td>
-<td>24.08</td><td markdown>
+<td>24.09</td><td markdown>
 ??? quote "cpm.dependencies"
     ```json
     {
       "name": "7-Zip",
-      "version": "24.08",
+      "version": "24.09",
       "github_repository": "rikyoz/7-Zip",
       "cmake_commands": [
         "file(GLOB SOURCE_FILES ${CPM_CURRENT_SOURCE_DIR}/C/*.c)",
@@ -164,12 +164,12 @@
 <tr markdown>
 <td>
 <a href="https://github.com/google/benchmark">benchmark</a><br>A microbenchmark support library</td>
-<td>1.9.0</td><td markdown>
+<td>1.9.1</td><td markdown>
 ??? quote "cpm.dependencies"
     ```json
     {
       "name": "benchmark",
-      "version": "1.9.0",
+      "version": "1.9.1",
       "github_repository": "google/benchmark",
       "options": [
         "BENCHMARK_ENABLE_TESTING OFF",
@@ -248,7 +248,24 @@
 </tr>
 <tr markdown>
 <td>
-<a href="https://github.com/hanickadot/compile-time-regular-expressions">compile-time-regular-expressions</a><br> Compile Time Regular Expression in C++</td>
+<a href="https://github.com/nerdmaennchen/cndl">cndl</a><br>An easy to use embeddable webserver (incl websockets) for your C++ project</td>
+<td>1.2.1</td><td markdown>
+??? quote "cpm.dependencies"
+    ```json
+    {
+      "name": "cndl",
+      "version": "1.2.1",
+      "github_repository": "SGSSGene/cndl"
+    }
+    ```
+</td>
+<td markdown>
+- webserver
+</td>
+</tr>
+<tr markdown>
+<td>
+<a href="https://github.com/hanickadot/compile-time-regular-expressions">compile-time-regular-expressions</a><br>Compile Time Regular Expression in C++</td>
 <td>3.9.0</td><td markdown>
 ??? quote "cpm.dependencies"
     ```json
@@ -452,13 +469,35 @@
 </tr>
 <tr markdown>
 <td>
+<a href="https://github.com/open-source-parsers/jsoncpp">jsoncpp</a><br>A C++ library for interacting with JSON.</td>
+<td>1.9.6</td><td markdown>
+??? quote "cpm.dependencies"
+    ```json
+    {
+      "name": "jsoncpp",
+      "version": "1.9.6",
+      "github_repository": "open-source-parsers/jsoncpp",
+      "git_tag": "{VERSION}",
+      "options": [
+        "JSONCPP_WITH_TESTS OFF"
+      ]
+    }
+    ```
+</td>
+<td markdown>
+- json
+- fileformat
+</td>
+</tr>
+<tr markdown>
+<td>
 <a href="https://github.com/IlyaGrebnov/libsais">libsais</a><br>libsais is a library for linear time suffix array, longest common prefix array and burrows wheeler transform construction based on induced sorting algorithm.</td>
-<td>2.8.5</td><td markdown>
+<td>2.8.6</td><td markdown>
 ??? quote "cpm.dependencies"
     ```json
     {
       "name": "libsais",
-      "version": "2.8.5",
+      "version": "2.8.6",
       "github_repository": "IlyaGrebnov/libsais"
     }
     ```
@@ -616,6 +655,7 @@
 </td>
 <td markdown>
 - json
+- fileformat
 </td>
 </tr>
 <tr markdown>
@@ -742,6 +782,7 @@
 </td>
 <td markdown>
 - yaml
+- fileformat
 </td>
 </tr>
 <tr markdown>
@@ -778,7 +819,7 @@
       "cmake_commands": [
         "add_library(reflect INTERFACE)",
         "target_include_directories(reflect SYSTEM INTERFACE ${CPM_CURRENT_SOURCE_DIR})",
-        "target_compile_options(reflect INTERFACE -std=c++20)",
+        "target_compile_features(reflect INTERFACE cxx_std_20)",
         "add_library(reflect::reflect ALIAS reflect)"
       ]
     }
@@ -858,6 +899,23 @@
 </tr>
 <tr markdown>
 <td>
+<a href="https://github.com/gottliebtfreitag/simplyfile">simplyfile</a><br>C++ wrappers around unix filedescriptors</td>
+<td>1.3</td><td markdown>
+??? quote "cpm.dependencies"
+    ```json
+    {
+      "name": "simplyfile",
+      "version": "1.3",
+      "github_repository": "SGSSGene/simplyfile"
+    }
+    ```
+</td>
+<td markdown>
+- wrapper
+</td>
+</tr>
+<tr markdown>
+<td>
 <a href="https://www.akenotsuki.com/misc/srell/en/">srell</a><br>SRELL (std::regex-like library) is a Unicode-aware regular expression template library for C++.</td>
 <td>4.040</td><td markdown>
 ??? quote "cpm.dependencies"
@@ -916,12 +974,12 @@
 <tr markdown>
 <td>
 <a href="https://github.com/martinus/unordered_dense">unordered_dense</a><br>A fast & densely stored hashmap and hashset based on robin-hood backward shift deletion</td>
-<td>4.4.0</td><td markdown>
+<td>4.5.0</td><td markdown>
 ??? quote "cpm.dependencies"
     ```json
     {
       "name": "unordered_dense",
-      "version": "4.4.0",
+      "version": "4.5.0",
       "github_repository": "martinus/unordered_dense"
     }
     ```
@@ -950,12 +1008,12 @@
 <tr markdown>
 <td>
 <a href="https://github.com/xtensor-stack/xsimd">xsimd</a><br>C++ wrappers for SIMD intrinsics and parallelized, optimized mathematical functions (SSE, AVX, AVX512, NEON, SVE))</td>
-<td>13.0.0</td><td markdown>
+<td>13.1.0</td><td markdown>
 ??? quote "cpm.dependencies"
     ```json
     {
       "name": "xsimd",
-      "version": "13.0.0",
+      "version": "13.1.0",
       "github_repository": "xtensor-stack/xsimd",
       "git_tag": "{VERSION}"
     }
@@ -1024,6 +1082,7 @@
 </td>
 <td markdown>
 - yaml
+- fileformat
 </td>
 </tr>
 <tr markdown>
