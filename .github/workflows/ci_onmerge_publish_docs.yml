@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 env:
   TZ: Europe/Berlin
 
@@ -25,6 +26,8 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: ./scripts/convert.sh > docs/lines.md
+      - run: |
+          jq --help
+          ./scripts/convert.sh > docs/lines.md
       - run: pip install mkdocs-material mkdocs-include-markdown-plugin
       - run: TZ=UTC mkdocs gh-deploy --force
