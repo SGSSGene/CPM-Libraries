@@ -30,7 +30,7 @@
     },
     {
       "name": "Catch2",
-      "version": "3.7.1",
+      "version": "3.8.0",
       "github_repository": "catchorg/Catch2"
     },
     {
