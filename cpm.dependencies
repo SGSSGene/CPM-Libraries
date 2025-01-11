@@ -179,7 +179,7 @@
     },
     {
       "name": "pugixml",
-      "version": "1.14",
+      "version": "1.15",
       "github_repository": "zeux/pugixml",
       "options": [
         "BUILD_SHARED_LIBS OFF"
