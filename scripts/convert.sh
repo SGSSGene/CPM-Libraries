@@ -24,12 +24,12 @@ for name in $(jq -r '[.packages[].name] | sort_by(.) | .[]' ${file}); do
     echo "<td>"
     echo "<a href=\"${homepage}\">${name}</a><br>${description}</td>"
     echo "<td>${version}</td><td markdown>"
-    echo "??? quote \"cpm.dependencies\""
+    echo "??? quote \"cpm.dependencies/cpmpack.json\""
     echo $'    ```json'
-    echo "${code}" | perl -npe 's/^/    /g'
+    echo "${code}" | perl -npe 's/^/        /g'
     echo $'    ```'
-    echo "</td>"
-    echo "<td markdown>"
+    echo "</td><td markdown>"
+    echo ""
     echo "${category}"
     echo "</td>"
     echo "</tr>"
