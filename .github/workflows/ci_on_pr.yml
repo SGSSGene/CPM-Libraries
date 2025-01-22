@@ -25,15 +25,43 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {os: ubuntu-22.04, compiler: spdx_license_lint}
+#          - {os: ubuntu-22.04, compiler: spdx_license_lint}
           - {os: ubuntu-22.04, compiler: gcc13-cpp20-release}
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          path: repo2
+
+      - name: Check changed folders
+        shell: bash
+        run: |-
+          cd repo2
+          git status
+          git fetch origin ${GITHUB_BASE_REF}
+          files="$(git diff --name-only origin/${GITHUB_BASE_REF}..HEAD | grep "^libraries/" | cut -d '/' -f -2 | sort -u | tr '\n' ' ')"
+          echo "${files}"
+          echo "subfolders=${files}" >> $GITHUB_ENV
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v10.3
+        uses: iv-project/IVaction@v10.4
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
           cmake_flags: ${{ matrix.cmake_flags }}
+          cmake_c_flags: ${{ matrix.cmake_c_flags }}
+          cmake_cxx_flags: ${{ matrix.cmake_cxx_flags }}
+          subfolders: ${{ env.subfolders }}
+          cpm_dependency_file: "cpmpack.json"
+
+  check_license:
+    runs-on: ubuntu-22.04
+    name: license check
+    steps:
+      - name: Check license files
+        uses: iv-project/IVaction@v10.3
+        with:
+          compiler: 'spdx_license_lint'
+          threads: 2
   final:
     runs-on: ubuntu-22.04
     name: final-pass
