@@ -31,30 +31,36 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          path: repo
-          submodules: recursive
-          fetch-tags: true
+          path: repo2
 
       - name: Check changed folders
-        if: ${{ matrix.compiler }} != 'spdx_license_lint'
         shell: bash
         run: |-
-          cd repo
+          cd repo2
           git status
-          git fetch
-          git log -n 1 origin/${GITHUB_BASE_REF}
-          #git log -n 1 origin/${GITHUB_REF_NAME}
-          git log -n 1 HEAD
-          files=$(git diff --name-only origin/${GITHUB_BASE_REF}..HEAD)
+          git fetch origin ${GITHUB_BASE_REF}
+          files=($(git diff --name-only origin/${GITHUB_BASE_REF}..HEAD | grep "^libraries/" | cut -d '/' -f -2 | sort -u))
           echo $files
-
-      - name: Check license files
-        if: ${{ matrix.compiler }} == 'spdx_license_lint'
+          echo "subfolders=\"$files\"" >> $GITHUB_ENV
+      - name: Standard IV-project testing
         uses: iv-project/IVaction@v10.3
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
           cmake_flags: ${{ matrix.cmake_flags }}
+          cmake_c_flags: ${{ matrix.cmake_c_flags }}
+          cmake_cxx_flags: ${{ matrix.cmake_cxx_flags }}
+          subfolders: ${{ env.subfolders }}
+
+  check_license:
+    runs-on: ubuntu-22.04
+    name: license check
+    steps:
+      - name: Check license files
+        uses: iv-project/IVaction@v10.3
+        with:
+          compiler: 'spdx_license_lint'
+          threads: 2
   final:
     runs-on: ubuntu-22.04
     name: final-pass
