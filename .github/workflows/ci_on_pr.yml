@@ -43,7 +43,7 @@ jobs:
           echo "${files}"
           echo "subfolders=${files}" >> $GITHUB_ENV
       - name: Standard IV-project testing
-        uses: iv-project/IVaction@v10.4
+        uses: iv-project/IVaction@v10.3
         with:
           compiler: ${{ matrix.compiler }}
           threads: 2
