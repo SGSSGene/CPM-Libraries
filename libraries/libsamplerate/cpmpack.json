@@ -1,0 +1,17 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "libsamplerate",
+      "version": "0.2.2",
+      "github_repository": "libsndfile/libsamplerate",
+      "git_tag": "{VERSION}",
+      "options": [
+        "BUILD_TESTING OFF",
+        "LIBSAMPLERATE_EXAMPLES OFF",
+        "LIBSAMPLERATE_INSTALL OFF",
+        "LIBSAMPLERATE_INSTALL_PKGCONFIG OFF"
+      ]
+    }
+  ]
+}

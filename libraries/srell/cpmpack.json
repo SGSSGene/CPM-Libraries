@@ -1,0 +1,16 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "srell",
+      "version": "4.040",
+      "url": "https://www.akenotsuki.com/misc/srell/releases/srell4_040.zip",
+      "download_only": true,
+      "cmake_commands": [
+        "add_library(srell INTERFACE)",
+        "target_include_directories(srell SYSTEM INTERFACE ${CPM_CURRENT_SOURCE_DIR})",
+        "add_library(srell::srell ALIAS srell)"
+      ]
+    }
+  ]
+}

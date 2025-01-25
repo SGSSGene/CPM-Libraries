@@ -1,0 +1,13 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "glad",
+      "version": "0.1.36",
+      "github_repository": "Dav1dde/glad",
+      "git_tag_ignore": [
+        "v2.*"
+      ]
+    }
+  ]
+}

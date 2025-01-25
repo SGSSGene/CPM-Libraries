@@ -1,0 +1,14 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "flatbuffers",
+      "version": "24.12.23",
+      "github_repository": "google/flatbuffers",
+      "options": [
+        "FLATBUFFERS_BUILD_TESTS OFF",
+        "FLATBUFFERS_INSTALL OFF"
+      ]
+    }
+  ]
+}

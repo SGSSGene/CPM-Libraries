@@ -1,0 +1,14 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "re2",
+      "version": "2024-07-02",
+      "github_repository": "google/re2",
+      "git_tag": "{VERSION}",
+      "options": [
+        "BUILD_SHARED_LIBS OFF"
+      ]
+    }
+  ]
+}
