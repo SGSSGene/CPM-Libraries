@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(pugixml-cpp pugixml.cpp)
-target_link_libraries(pugixml-cpp PRIVATE pugixml::pugixml)
+target_link_libraries(pugixml-cpp PRIVATE pugixml::static)

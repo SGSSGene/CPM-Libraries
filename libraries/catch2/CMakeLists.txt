@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(catch2-cpp catch2.cpp)
-target_link_libraries(catch2-cpp PRIVATE catch2::catch2)
+target_link_libraries(catch2-cpp PRIVATE Catch2::Catch2WithMain)

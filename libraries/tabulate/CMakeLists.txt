@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(tabulate-cpp tabulate.cpp)
-target_link_libraries(tabulate-cpp PRIVATE tabulate::tabulate)
+target_link_libraries(tabulate-cpp PRIVATE tabulate)

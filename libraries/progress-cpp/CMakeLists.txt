@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(progress-cpp-cpp progress-cpp.cpp)
-target_link_libraries(progress-cpp-cpp PRIVATE progress-cpp::progress-cpp)
+target_link_libraries(progress-cpp-cpp PRIVATE progresscpp)

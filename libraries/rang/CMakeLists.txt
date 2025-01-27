@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(rang-cpp rang.cpp)
-target_link_libraries(rang-cpp PRIVATE rang::rang)
+target_link_libraries(rang-cpp PRIVATE rang)

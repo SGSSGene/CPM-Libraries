@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(libsamplerate-cpp libsamplerate.cpp)
-target_link_libraries(libsamplerate-cpp PRIVATE libsamplerate::libsamplerate)
+target_link_libraries(libsamplerate-cpp PRIVATE SampleRate::samplerate)

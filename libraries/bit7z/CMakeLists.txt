@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(bit7z-cpp bit7z.cpp)
-target_link_libraries(bit7z-cpp PRIVATE bit7z::bit7z)
+target_link_libraries(bit7z-cpp PRIVATE bit7z)

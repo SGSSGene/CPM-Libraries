@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(jsoncpp-cpp jsoncpp.cpp)
-target_link_libraries(jsoncpp-cpp PRIVATE jsoncpp::jsoncpp)
+target_link_libraries(jsoncpp-cpp PRIVATE jsoncpp_static)

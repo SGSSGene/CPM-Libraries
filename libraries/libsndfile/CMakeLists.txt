@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(libsndfile-cpp libsndfile.cpp)
-target_link_libraries(libsndfile-cpp PRIVATE libsndfile::libsndfile)
+target_link_libraries(libsndfile-cpp PRIVATE SndFile::sndfile)

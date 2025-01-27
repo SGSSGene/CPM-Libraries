@@ -12,4 +12,5 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(xsimd-cpp xsimd.cpp)
-target_link_libraries(xsimd-cpp PRIVATE xsimd::xsimd)
+target_link_libraries(xsimd-cpp PRIVATE xsimd)
+target_compile_options(xsimd-cpp PUBLIC -mavx -mavx2)

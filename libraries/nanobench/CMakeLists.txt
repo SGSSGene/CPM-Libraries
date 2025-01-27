@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(nanobench-cpp nanobench.cpp)
-target_link_libraries(nanobench-cpp PRIVATE nanobench::nanobench)
+target_link_libraries(nanobench-cpp PRIVATE nanobench)

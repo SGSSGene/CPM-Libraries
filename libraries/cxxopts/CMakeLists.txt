@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(cxxopts-cpp cxxopts.cpp)
-target_link_libraries(cxxopts-cpp PRIVATE cxxopts::cxxopts)
+target_link_libraries(cxxopts-cpp PRIVATE cxxopts)

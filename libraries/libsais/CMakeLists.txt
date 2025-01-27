@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(libsais-cpp libsais.cpp)
-target_link_libraries(libsais-cpp PRIVATE libsais::libsais)
+target_link_libraries(libsais-cpp PRIVATE libsais)

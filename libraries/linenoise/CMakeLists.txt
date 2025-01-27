@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(linenoise-cpp linenoise.cpp)
-target_link_libraries(linenoise-cpp PRIVATE linenoise::linenoise)
+target_link_libraries(linenoise-cpp PRIVATE linenoise)
