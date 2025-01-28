@@ -12,4 +12,4 @@ CPMAddPackage("gh:SGSSGene/cpmpack@1.0.1")
 loadCPMPack("${CMAKE_CURRENT_SOURCE_DIR}/cpmpack.json")
 
 add_executable(robin-hood-hashing-cpp robin-hood-hashing.cpp)
-target_link_libraries(robin-hood-hashing-cpp PRIVATE robin-hood-hashing::robin-hood-hashing)
+target_link_libraries(robin-hood-hashing-cpp PRIVATE robin_hood::robin_hood)
