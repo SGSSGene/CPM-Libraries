@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "doctest",
+      "version": "2.4.11",
+      "github_repository": "doctest/doctest"
+    }
+  ]
+}

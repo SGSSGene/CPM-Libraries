@@ -1,0 +1,16 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "reflect",
+      "version": "1.2.4",
+      "github_repository": "boost-ext/reflect",
+      "cmake_commands": [
+        "add_library(reflect INTERFACE)",
+        "target_include_directories(reflect SYSTEM INTERFACE ${CPM_CURRENT_SOURCE_DIR})",
+        "target_compile_features(reflect INTERFACE cxx_std_20)",
+        "add_library(reflect::reflect ALIAS reflect)"
+      ]
+    }
+  ]
+}

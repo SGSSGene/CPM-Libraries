@@ -1,0 +1,17 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "7-Zip",
+      "version": "24.09",
+      "github_repository": "rikyoz/7-Zip",
+      "cmake_commands": [
+        "file(GLOB SOURCE_FILES ${CPM_CURRENT_SOURCE_DIR}/C/*.c)",
+        "add_library(7-Zip_impl ${SOURCE_FILES})",
+        "target_include_directories(7-Zip_impl PUBLIC SYSTEM ${CPM_CURRENT_SOURCE_DIR}/CPP/ ${CPM_CURRENT_SOURCE_DIR}/C/)",
+        "add_library(7-zip::7-zip ALIAS 7-Zip_impl)",
+        "set(BIT7Z_CUSTOM_7ZIP_PATH ${CPM_CURRENT_SOURCE_DIR})"
+      ]
+    }
+  ]
+}

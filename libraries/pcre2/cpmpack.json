@@ -1,0 +1,14 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "pcre2",
+      "version": "10.45-RC1",
+      "github_repository": "PCRE2Project/pcre2",
+      "git_tag": "pcre2-{VERSION}",
+      "options": [
+        "PCRE2_BUILD_TESTS OFF"
+      ]
+    }
+  ]
+}

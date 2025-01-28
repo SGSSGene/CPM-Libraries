@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "nanobench",
+      "version": "4.3.11",
+      "github_repository": "martinus/nanobench"
+    }
+  ]
+}
