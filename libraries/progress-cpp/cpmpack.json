@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "progress-cpp",
+      "github_repository": "prakhar1989/progress-cpp",
+      "git_tag": "7bfba0d22d19c41323aa35541618b6ebec9d737c"
+    }
+  ]
+}

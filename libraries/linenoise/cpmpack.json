@@ -1,0 +1,16 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "linenoise",
+      "version": "1.0",
+      "github_repository": "antirez/linenoise",
+      "git_tag": "{VERSION}",
+      "download_only": true,
+      "cmake_commands": [
+        "add_library(linenoise ${CPM_CURRENT_SOURCE_DIR}/linenoise.c)",
+        "target_include_directories(linenoise PUBLIC ${CPM_CURRENT_SOURCE_DIR})"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "robin-hood-hashing",
+      "version": "3.11.5",
+      "github_repository": "martinus/robin-hood-hashing",
+      "git_tag": "{VERSION}"
+    }
+  ]
+}

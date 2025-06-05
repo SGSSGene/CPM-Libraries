@@ -1,0 +1,11 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "yaml-cpp",
+      "version": "0.8.0",
+      "github_repository": "jbeder/yaml-cpp",
+      "git_tag": "{VERSION}"
+    }
+  ]
+}
