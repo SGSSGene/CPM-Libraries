@@ -1,0 +1,878 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>CPM compatible Libraries</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#libraries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="CPM compatible Libraries" class="md-header__button md-logo" aria-label="CPM compatible Libraries" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CPM compatible Libraries
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SGSSGene/CPM-Libraries" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="CPM compatible Libraries" class="md-nav__button md-logo" aria-label="CPM compatible Libraries" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CPM compatible Libraries
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SGSSGene/CPM-Libraries" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<!--
+    SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb
+    SPDX-License-Identifier: CC0-1.0
+-->
+<h1 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h1>
+<p><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for..."></p>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    let tdTags = tr[i].getElementsByTagName("td");
+    let hit = false;
+    for (j = 0; j < tdTags.length; ++j) {
+        if (j == 2) continue;
+        td = tdTags[j]
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            hit = true;
+          }
+        }
+    }
+    if (hit) {
+        tr[i].style.display = "";
+    } else {
+        tr[i].style.display = "none";
+    }
+  }
+}
+</script>
+<div>
+<table id="myTable">
+<tr>
+<th>Name
+</th>
+<th>Version
+</th>
+<th>cpm.dependencies
+</th>
+<th>Categories</th>
+</tr>
+<!--
+    SPDX-FileCopyrightText: 2024 Simon Gene Gottlieb
+    SPDX-License-Identifier: CC0-1.0
+-->
+<tr>
+<td>
+<a href="https://github.com/rikyoz/7-zip">7-Zip</a><br>[UNOFFICIAL MIRROR] A file archiver with a high compression ratio</td>
+<td>24.09</td>
+<ul>
+<li>compression
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/ChunelFeng/CGraph">CGraph</a><br>A common used C++ DAG framework</td>
+<td>2.6.2</td>
+<ul>
+<li>frameworks
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/SGSSGene/CMakeUseCCache">CMakeUseCCache</a><br>Enables auto usage of ccache with cmake and CPM</td>
+<td>1.0.0</td>
+<ul>
+<li>tools</li>
+<li>cpm
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/catchorg/Catch2">Catch2</a><br>A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later</td>
+<td>3.8.0</td>
+<ul>
+<li>debug
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/TheLartians/GroupSourcesByFolder.cmake">GroupSourcesByFolder.cmake</a><br>Automatically group sources by folder structure for Visual Studio/Xcode generators</td>
+<td>1.0</td>
+<ul>
+<li>tools</li>
+<li>cpm
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/iv-project/IVio">IVio</a><br>IO library for file formats used in bioinformatics</td>
+<td>0.4.3</td>
+<ul>
+<li>bioinformatic</li>
+<li>fileformat
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/TheLartians/PackageProject.cmake">PackageProject.cmake</a><br>🏛️ Help other developers use your project. A CMake script for packaging C/C++ projects for simple project installation while employing best-practices for maximum compatibility.</td>
+<td>1.13.0</td>
+<ul>
+<li>tools</li>
+<li>cpm
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/abseil/abseil-cpp">absl</a><br>Abseil Common Libraries (C++)</td>
+<td>20240722.0</td>
+<ul>
+<li>framework
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/google/benchmark">benchmark</a><br>A microbenchmark support library</td>
+<td>1.9.1</td>
+<ul>
+<li>debug
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/rikyoz/bit7z">bit7z</a><br>A C++ static library offering a clean and simple interface to the 7-zip shared libraries.</td>
+<td>4.0.7-dirty</td>
+<ul>
+<li>compression
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://sourceware.org/bzip2/">bzip2</a><br>bzip2 is a freely available, patent free (see below), high-quality data compressor.</td>
+<td>1.0.8</td>
+<ul>
+<li>compression
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/USCiLab/cereal">cereal</a><br>A C++11 library for serialization</td>
+<td>1.3.2</td>
+<ul>
+<li>serialization
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/nerdmaennchen/cndl">cndl</a><br>An easy to use embeddable webserver (incl websockets) for your C++ project</td>
+<td>1.2.1</td>
+<ul>
+<li>webserver
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/hanickadot/compile-time-regular-expressions">compile-time-regular-expressions</a><br>Compile Time Regular Expression in C++</td>
+<td>3.9.0</td>
+<ul>
+<li>regex
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/SGSSGene/cpm_check_version">cpm_check_version</a><br>CMake+CPM packages helping to check for newer package versions</td>
+<td>0.1.1</td>
+<ul>
+<li>tools</li>
+<li>cpm
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/jarro2783/cxxopts">cxxopts</a><br>Lightweight C++ command line option parser</td>
+<td>3.2.1</td>
+<ul>
+<li>terminal
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/doctest/doctest">doctest</a><br>The fastest feature-rich C++11/14/17/20/23 single-header testing framework</td>
+<td>2.4.11</td>
+<ul>
+<li>debug
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/google/flatbuffers">flatbuffers</a><br>FlatBuffers: Memory Efficient Serialization Library</td>
+<td>24.12.23</td>
+<ul>
+<li>serialization
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/SGSSGene/fmindex-collection">fmindex-collection</a><br>missing</td>
+<td>0.4.3</td>
+<ul>
+<li>bioinformatic
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/fmtlib/fmt">fmt</a><br>A modern formatting library</td>
+<td>11.1.1</td>
+<ul>
+<li>miscellaneous
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Dav1dde/glad">glad</a><br>Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.</td>
+<td>0.1.36</td>
+<ul>
+<li>graphics
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/glfw/glfw">glfw</a><br>A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input</td>
+<td>3.4</td>
+<ul>
+<li>graphics
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/google/googletest">googletest</a><br>GoogleTest - Google Testing and Mocking Framework</td>
+<td>1.15.2</td>
+<ul>
+<li>debug
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/open-source-parsers/jsoncpp">jsoncpp</a><br>A C++ library for interacting with JSON.</td>
+<td>1.9.6</td>
+<ul>
+<li>json</li>
+<li>fileformat
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/IlyaGrebnov/libsais">libsais</a><br>libsais is a library for linear time suffix array, longest common prefix array and burrows wheeler transform construction based on induced sorting algorithm.</td>
+<td>2.8.6</td>
+<ul>
+<li>bioinformatic
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/libsndfile/libsamplerate">libsamplerate</a><br>An audio Sample Rate Conversion library</td>
+<td>0.2.2</td>
+<ul>
+<li>audio
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/libsndfile/libsndfile">libsndfile</a><br>A C library for reading and writing sound files containing sampled audio data.</td>
+<td>1.2.2</td>
+<ul>
+<li>audio</li>
+<li>fileformat
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/antirez/linenoise">linenoise</a><br>A small self-contained alternative to readline and libedit</td>
+<td>1.0</td>
+<ul>
+<li>terminal
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/alandefreitas/matplotplusplus">matplotplusplus</a><br>Matplot++: A C++ Graphics Library for Data Visualization 📊🗾</td>
+<td>1.2.1</td>
+<ul>
+<li>visualization
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/microsoft/mimalloc">mimalloc</a><br>mimalloc is a compact general purpose allocator with excellent performance.</td>
+<td>3.0.1</td>
+<ul>
+<li>memory allocation
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/martinus/nanobench">nanobench</a><br>Simple, fast, accurate single-header microbenchmarking functionality for C++11/14/17/20</td>
+<td>4.3.11</td>
+<ul>
+<li>debug
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/nlohmann/json">nlohman_json</a><br>JSON for Modern C++</td>
+<td>3.11.3</td>
+<ul>
+<li>json</li>
+<li>fileformat
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/kkos/oniguruma">oniguruma</a><br>regular expression library</td>
+<td>6.9.10</td>
+<ul>
+<li>regex
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/PCRE2Project/pcre2">pcre2</a><br>PCRE2 development is now based here.</td>
+<td>10.45-RC1</td>
+<ul>
+<li>regex
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/prakhar1989/progress-cpp">progress-cpp</a><br>A flexible ASCII progress-bar for C++</td>
+<td>null</td>
+<ul>
+<li>terminal
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/zeux/pugixml">pugixml</a><br>Light-weight, simple and fast XML parser for C++ with XPath support</td>
+<td>1.14</td>
+<ul>
+<li>xml
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/pybind/pybind11">pybind11</a><br>Seamless operability between C++11 and Python</td>
+<td>2.13.6</td>
+<ul>
+<li>scripting
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/agauniyal/rang">rang</a><br>A Minimal, Header only Modern c++ library for terminal goodies 💄✨</td>
+<td>3.2</td>
+<ul>
+<li>terminal
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/biojppm/rapidyaml">rapidyaml</a><br>Rapid YAML - a library to parse and emit YAML, and do it fast</td>
+<td>0.7.2</td>
+<ul>
+<li>yaml</li>
+<li>fileformat
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/google/re2">re2</a><br>RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.</td>
+<td>2024-07-02</td>
+<ul>
+<li>regex
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/boost-ext/reflect">reflect</a><br>C++20 Static Reflection library</td>
+<td>1.2.4</td>
+<ul>
+<li>reflection
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/martinus/robin-hood-hashing">robin-hood-hashing</a><br>Fast &amp; memory efficient hashtable based on robin hood hashing for C++11/14/17/20</td>
+<td>3.11.5</td>
+<ul>
+<li>containers
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/xxsds/sdsl-lite">sdsl-lite</a><br>Succinct Data Structure Library 3.0</td>
+<td>3.0.3</td>
+<ul>
+<li>bioinformatic
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/simd-everywhere/simde">simde</a><br>Implementations of SIMD instruction sets for systems which don't natively support them.</td>
+<td>0.8.2</td>
+<ul>
+<li>simd
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/gottliebtfreitag/simplyfile">simplyfile</a><br>C++ wrappers around unix filedescriptors</td>
+<td>1.3</td>
+<ul>
+<li>wrapper
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://www.akenotsuki.com/misc/srell/en/">srell</a><br>SRELL (std::regex-like library) is a Unicode-aware regular expression template library for C++.</td>
+<td>4.040</td>
+<ul>
+<li>regex
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/p-ranav/tabulate">tabulate</a><br>Table Maker for Modern C++</td>
+<td>1.5</td>
+<ul>
+<li>terminal
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/marzer/tomlplusplus">tomlplusplus</a><br>Header-only TOML config file parser and serializer for C++17.</td>
+<td>3.4.0</td>
+<ul>
+<li>configuration
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/martinus/unordered_dense">unordered_dense</a><br>A fast &amp; densely stored hashmap and hashset based on robin-hood backward shift deletion</td>
+<td>4.5.0</td>
+<ul>
+<li>containers
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/martinmoene/variant-lite">variant-lite</a><br>variant lite - A C++17-like variant, a type-safe union for C++98, C++11 and later in a single-file header-only library</td>
+<td>2.0.0</td>
+<ul>
+<li>container
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/xtensor-stack/xsimd">xsimd</a><br>C++ wrappers for SIMD intrinsics and parallelized, optimized mathematical functions (SSE, AVX, AVX512, NEON, SVE))</td>
+<td>13.1.0</td>
+<ul>
+<li>simd
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/xtensor-stack/xtl">xtl</a><br>The x template library</td>
+<td>0.7.7</td>
+<ul>
+<li>framework
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Cyan4973/xxHash">xxHash</a><br>Extremely fast non-cryptographic hash algorithm</td>
+<td>0.8.3</td>
+<ul>
+<li>hashing
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/jbeder/yaml-cpp">yaml-cpp</a><br>A YAML parser and emitter in C++</td>
+<td>0.8.0</td>
+<ul>
+<li>yaml</li>
+<li>fileformat
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://zlib.net">zlib</a><br>A Massively Spiffy Yet Delicately Unobtrusive Compression Library</td>
+<td>1.3.1</td>
+<ul>
+<li>compression
+</td></li>
+</ul>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/facebook/zstd">zstd</a><br>Zstandard - Fast real-time compression algorithm</td>
+<td>1.5.6</td>
+<ul>
+<li>compression
+</td></li>
+</ul>
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "content.code.copy", "navigation.expand"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="javascript/tablesort.js"></script>
+      
+        <script src="javascript/sorts/tablesort.date.js"></script>
+      
+        <script src="javascript/sorts/tablesort.dotsep.js"></script>
+      
+        <script src="javascript/sorts/tablesort.filesize.js"></script>
+      
+        <script src="javascript/sorts/tablesort.monthname.js"></script>
+      
+        <script src="javascript/sorts/tablesort.number.js"></script>
+      
+        <script src="javascript/inittablesort.js"></script>
+      
+    
+  </body>
+</html>
