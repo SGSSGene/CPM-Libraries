@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "nlohman_json",
+      "version": "3.11.3",
+      "github_repository": "nlohmann/json"
+    }
+  ]
+}

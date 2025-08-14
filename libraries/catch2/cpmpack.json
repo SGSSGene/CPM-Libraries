@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "Catch2",
+      "version": "3.8.0",
+      "github_repository": "catchorg/Catch2"
+    }
+  ]
+}

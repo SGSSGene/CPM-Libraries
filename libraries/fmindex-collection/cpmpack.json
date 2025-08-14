@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "fmindex-collection",
+      "version": "0.4.5",
+      "github_repository": "SGSSGene/fmindex-collection"
+    }
+  ]
+}
