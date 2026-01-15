@@ -1,0 +1,16 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+      "download_only": true,
+      "cmake_commands": [
+        "add_library(bzip2 ${CPM_CURRENT_SOURCE_DIR}/blocksort.c ${CPM_CURRENT_SOURCE_DIR}/bzip2.c ${CPM_CURRENT_SOURCE_DIR}/bzlib.c ${CPM_CURRENT_SOURCE_DIR}/compress.c ${CPM_CURRENT_SOURCE_DIR}/crctable.c ${CPM_CURRENT_SOURCE_DIR}/decompress.c ${CPM_CURRENT_SOURCE_DIR}/huffman.c ${CPM_CURRENT_SOURCE_DIR}/makefile.msc ${CPM_CURRENT_SOURCE_DIR}/randtable.c)",
+        "target_include_directories(bzip2 SYSTEM INTERFACE ${bzip2_SOURCE_DIR})",
+        "add_library(bzip2::bzip2 ALIAS bzip2)"
+      ]
+    }
+  ]
+}

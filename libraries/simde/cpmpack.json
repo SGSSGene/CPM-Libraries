@@ -1,0 +1,17 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "simde",
+      "version": "0.8.2",
+      "github_repository": "simd-everywhere/simde",
+      "download_only": true,
+      "cmake_commands": [
+        "add_library (simde INTERFACE)",
+        "add_library (simde::simde ALIAS simde)",
+        "target_include_directories (simde INTERFACE $<BUILD_INTERFACE:${CPM_CURRENT_SOURCE_DIR}>)",
+        "set_target_properties (simde PROPERTIES INTERFACE_SYSTEM_INCLUDE_DIRECTORIES $<TARGET_PROPERTY:simde,INTERFACE_INCLUDE_DIRECTORIES>)"
+      ]
+    }
+  ]
+}

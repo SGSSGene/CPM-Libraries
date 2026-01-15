@@ -1,0 +1,19 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "libsndfile",
+      "version": "1.2.2",
+      "github_repository": "libsndfile/libsndfile",
+      "git_tag": "{VERSION}",
+      "options": [
+        "BUILD_TESTING OFF",
+        "BUILD_PROGRAMS OFF",
+        "BUILD_EXAMPLES OFF",
+        "BUILD_REGTEST OFF",
+        "ENABLE_PACKAGE_CONFIG OFF",
+        "INSTALL_PKGCONFIG_MODULE OFF"
+      ]
+    }
+  ]
+}

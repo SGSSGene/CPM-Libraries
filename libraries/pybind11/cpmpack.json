@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "pybind11",
+      "version": "2.13.6",
+      "github_repository": "pybind/pybind11"
+    }
+  ]
+}

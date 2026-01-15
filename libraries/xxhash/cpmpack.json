@@ -1,0 +1,18 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "xxHash",
+      "version": "0.8.3",
+      "github_repository": "Cyan4973/xxHash",
+      "download_only": true,
+      "cmake_commands": [
+        "add_library(xxhash ${CPM_CURRENT_SOURCE_DIR}/xxhash.c ${CPM_CURRENT_SOURCE_DIR}/xxh_x86dispatch.c)",
+        "target_include_directories(xxhash SYSTEM INTERFACE $<BUILD_INTERFACE:${CPM_CURRENT_SOURCE_DIR}>)"
+      ],
+      "git_tag_ignore": [
+        "r[0-9]*"
+      ]
+    }
+  ]
+}

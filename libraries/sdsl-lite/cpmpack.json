@@ -1,0 +1,19 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "sdsl-lite",
+      "version": "3.0.3",
+      "github_repository": "xxsds/sdsl-lite",
+      "download_only": true,
+      "cmake_commands": [
+        "add_library(sdsl-lite INTERFACE)",
+        "target_include_directories(sdsl-lite SYSTEM INTERFACE ${CPM_CURRENT_SOURCE_DIR}/include)",
+        "add_library(sdsl-lite::sdsl-lite ALIAS sdsl-lite)"
+      ],
+      "git_tag_ignore": [
+        "[Cc]++.*"
+      ]
+    }
+  ]
+}

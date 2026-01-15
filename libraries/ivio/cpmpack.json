@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "IVio",
+      "version": "0.4.3",
+      "github_repository": "iv-project/IVio"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "oniguruma",
+      "version": "6.9.10",
+      "github_repository": "kkos/oniguruma"
+    }
+  ]
+}

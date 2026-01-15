@@ -1,0 +1,15 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "benchmark",
+      "version": "1.9.1",
+      "github_repository": "google/benchmark",
+      "options": [
+        "BENCHMARK_ENABLE_TESTING OFF",
+        "BENCHMARK_ENABLE_INSTALL OFF",
+        "BENCHMARK_ENABLE_GTEST_TESTS OFF"
+      ]
+    }
+  ]
+}

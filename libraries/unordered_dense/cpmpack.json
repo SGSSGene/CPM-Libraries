@@ -1,0 +1,10 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "unordered_dense",
+      "version": "4.5.0",
+      "github_repository": "martinus/unordered_dense"
+    }
+  ]
+}

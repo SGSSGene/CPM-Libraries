@@ -1,0 +1,13 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "pugixml",
+      "version": "1.14",
+      "github_repository": "zeux/pugixml",
+      "options": [
+        "BUILD_SHARED_LIBS OFF"
+      ]
+    }
+  ]
+}

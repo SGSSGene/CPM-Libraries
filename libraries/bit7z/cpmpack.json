@@ -1,0 +1,11 @@
+{
+  "format_version": "1",
+  "packages": [
+    {
+      "name": "bit7z",
+      "version": "4.0.7-dirty",
+      "github_repository": "rikyoz/bit7z",
+      "git_tag": "f04d819e8eb82474532e3da4925e5dd247ea35bb"
+    }
+  ]
+}
